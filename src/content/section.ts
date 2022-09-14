@@ -1,4 +1,4 @@
-export const section = [
+export const sectionList = [
     {
         title: "Farmacia",
         href: "#farmacia",
