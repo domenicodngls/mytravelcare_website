@@ -1,19 +1,20 @@
 import React from 'react';
-import './App.css';
-import Header from "./components/header";
+import Header from "./components/Header";
 import {ThemeProvider} from "@mui/material";
 import {theme} from "./theme/themeProvider";
-import Body from './components/body';
-import NavigationBar from "./components/navigationBar";
+import Body from './components/Body';
+import NavigationBar from "./components/NavigationBar";
+import SectionList from "./components/SectionList";
 
 function App() {
     return (
 
         <ThemeProvider theme={theme}>
-            <div className="App">
+            <div className="App" style={{backgroundColor: "#EEEEEE"}}>
                 <Header></Header>
                 <Body></Body>
                 <NavigationBar></NavigationBar>
+                <SectionList></SectionList>
             </div>
         </ThemeProvider>
     );

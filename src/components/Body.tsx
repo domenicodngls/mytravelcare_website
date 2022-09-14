@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import {site} from "../content/content";
 import logo from "../icons/logo.png";
 import Container from "@mui/material/Container";
+import {theme} from "../theme/themeProvider";
 
 const Body = () => {
         const style = {
@@ -33,7 +34,7 @@ const Body = () => {
                                 fontWeight: 700,
                                 letterSpacing: '.3rem',
                                 textDecoration: 'none',
-                                fontSize: '10vmin'
+                                fontSize: '10vmin',
                             }}
                         >
                             {site.title}
@@ -58,9 +59,10 @@ const Body = () => {
                 <Typography
                     sx={{
                         mt:5,
-                        mr: 2,
+                        mr: 5,
+                        ml: 5,
                         display: 'flex',
-                        letterSpacing: '.3rem',
+                        letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin'
                     }}
