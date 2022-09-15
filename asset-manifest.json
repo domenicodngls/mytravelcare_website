@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/mytravelcare_website/static/css/main.073c9b0a.css",
-    "main.js": "/mytravelcare_website/static/js/main.03fe7153.js",
+    "main.css": "/mytravelcare_website/static/css/main.e6c13ad2.css",
+    "main.js": "/mytravelcare_website/static/js/main.3b1f6042.js",
     "static/js/787.ff162402.chunk.js": "/mytravelcare_website/static/js/787.ff162402.chunk.js",
-    "static/media/logo.svg": "/mytravelcare_website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/profilo.jpeg": "/mytravelcare_website/static/media/profilo.ff989cfd6570bf31df49.jpeg",
+    "static/media/farmacia.jpeg": "/mytravelcare_website/static/media/farmacia.7558c8967d42b3b636be.jpeg",
+    "static/media/report.jpeg": "/mytravelcare_website/static/media/report.08547757b052cd540b2f.jpeg",
+    "static/media/sintomi.jpeg": "/mytravelcare_website/static/media/sintomi.ae98374110fa28abb4c3.jpeg",
+    "static/media/logo.png": "/mytravelcare_website/static/media/logo.773bb5a8d6ea5804f8e3.png",
     "index.html": "/mytravelcare_website/index.html",
-    "main.073c9b0a.css.map": "/mytravelcare_website/static/css/main.073c9b0a.css.map",
-    "main.03fe7153.js.map": "/mytravelcare_website/static/js/main.03fe7153.js.map",
+    "main.e6c13ad2.css.map": "/mytravelcare_website/static/css/main.e6c13ad2.css.map",
+    "main.3b1f6042.js.map": "/mytravelcare_website/static/js/main.3b1f6042.js.map",
     "787.ff162402.chunk.js.map": "/mytravelcare_website/static/js/787.ff162402.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.03fe7153.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3b1f6042.js"
   ]
 }
