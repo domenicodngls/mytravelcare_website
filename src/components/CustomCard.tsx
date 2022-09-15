@@ -1,8 +1,5 @@
 import * as React from 'react';
-import {sectionList} from "../content/section";
 import {
-    Button,
-    ButtonGroup,
     Card,
     CardActions,
     CardContent,
@@ -46,7 +43,8 @@ const CustomCard = (section: SectionType) => {
         <Card sx={{
             ml: 5,
             mr: 5,
-
+            mb: 5,
+            mt: 5
         }} id={section.title}>
             <Element name={section.title}></Element>
             <CardHeader

@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import {site} from "../content/content";
 import {theme} from "../theme/themeProvider";
-import logo from "../icons/logo.png";
+import logo from "../icons/logo.svg";
 
 const Header = () => {
     const style = {

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Typography from "@mui/material/Typography";
 import {site} from "../content/content";
-import logo from "../icons/logo.png";
+import logo from "../icons/logo.svg";
 import Container from "@mui/material/Container";
 import {theme} from "../theme/themeProvider";
 
