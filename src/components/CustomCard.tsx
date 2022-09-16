@@ -11,7 +11,7 @@ import {
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {SectionType} from "../common/customType";
-import {theme} from "../theme/themeProvider";
+import {style} from "../theme/style";
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -20,7 +20,9 @@ interface ExpandMoreProps extends IconButtonProps {
 const ExpandMore = styled((props: ExpandMoreProps) => {
     const {expand, ...other} = props;
     return <IconButton {...other} />;
-})(({theme, expand}) => ({
+})
+
+(({theme, expand}) => ({
     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
@@ -38,21 +40,14 @@ const CustomCard = (section: SectionType) => {
     let Scroll = require('react-scroll');
     let Element = Scroll.Element;
 
-
     return (
-        <Card sx={{
-            ml: 5,
-            mr: 5,
-            mb: 5,
-            mt: 5
-        }} id={section.title}>
-            <Element name={section.title}></Element>
+        <Card
+            sx={style.card.card}
+            id={section.title}>
+            <Element name={section.title}/>
             <CardHeader
                 title={section.title}
-                sx = {{
-                    backgroundColor: theme.palette.secondary.main,
-                    color: theme.palette.secondary.contrastText
-                }}
+                sx={style.card.header}
             />
             <CardMedia
                 component="img"
@@ -60,7 +55,10 @@ const CustomCard = (section: SectionType) => {
                 image={require(`../images/${section.image}`)}
             />
             <CardContent>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                    variant="body1"
+                    sx={style.card.content}
+                >
                     {section.description}
                 </Typography>
             </CardContent>
@@ -76,7 +74,9 @@ const CustomCard = (section: SectionType) => {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
-                    <Typography paragraph>
+                    <Typography
+                        paragraph
+                        sx={style.card.detail}>
                         {section.detail}
                     </Typography>
                 </CardContent>
