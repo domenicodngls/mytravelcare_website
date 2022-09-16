@@ -58,11 +58,12 @@ export const style = {
             mt: 5
         },
         content: {
-            fontSize: '2.2vmin',
-            color: theme.palette.secondary.main
+            fontSize: '4vmin',
+            color: theme.palette.text.secondary
         },
         detail: {
-            fontSize: '10vmin'
+            fontSize: '4vmin',
+            color: theme.palette.text.secondary
         },
         header: {
             backgroundColor: theme.palette.secondary.main,
