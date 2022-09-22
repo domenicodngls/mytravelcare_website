@@ -11,28 +11,29 @@ import Functionality from "./components/section/Functionality";
 import Digitalization from "./components/section/Digitalization";
 import AboutUs from "./components/section/AboutUs";
 import Contact from "./components/section/Contact";
+import {style} from "./theme/style";
 
 function App() {
     return (
-            <ThemeProvider theme={theme}>
-                <div
-                    className="App"
-                    style={{backgroundColor: "#EEEEEE"}}>
-                    <Header></Header>
-                    <Body></Body>
-                    <NavigationBar></NavigationBar>
-                    <ScrollToTop>
-                        <Fab size="small" aria-label="scroll back to top">
-                            <KeyboardArrowUpIcon/>
-                        </Fab>
-                    </ScrollToTop>
-                    <Functionality></Functionality>
-                    <Digitalization></Digitalization>
-                    <AboutUs></AboutUs>
-                    <Contact></Contact>
-                    <Footer></Footer>
-                </div>
-            </ThemeProvider>
+        <ThemeProvider theme={theme}>
+            <div
+                className="App"
+                style={{backgroundColor: style.common.backgroundColor}}>
+                <Header></Header>
+                <Body></Body>
+                <NavigationBar></NavigationBar>
+                <ScrollToTop>
+                    <Fab size="small" aria-label="scroll back to top">
+                        <KeyboardArrowUpIcon/>
+                    </Fab>
+                </ScrollToTop>
+                <Functionality></Functionality>
+                <Digitalization></Digitalization>
+                <AboutUs></AboutUs>
+                <Contact></Contact>
+                <Footer></Footer>
+            </div>
+        </ThemeProvider>
     );
 }
 

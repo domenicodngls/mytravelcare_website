@@ -51,6 +51,7 @@ export const style = {
         }
     },
     common: {
+        backgroundColor: "#EEEEEE",
         borderBottom: `solid 10px`,
         margin: {
             ml: 5,
