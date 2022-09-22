@@ -5,7 +5,7 @@ export const site = {
     subtitle: "by Evocare Srl",
     email: "evocare.mytravelcare@gmail.com",
     description: "Al sicuro con la tua salute anche quando non sei a casa",
-    long_description: "Evocare aiuta i pazienti a superare le barriere della Salute. Crediamo che migliorare la qualità, l’accessibilità e l’efficacia del sistema rappresenti l’evoluzione essenziale della Salute. Evocare è una startup innovativa fondata sull’esperienza di un gruppo dinamico di persone. Il nostro team è unico: combina la competenza tecnologica e manageriale con la sensibilità e la conoscenza in campo sanitario.",
+    long_description: "MyTravelCare aiuta i pazienti a superare le barriere della Salute. Crediamo che migliorare la qualità, l’accessibilità e l’efficacia del sistema rappresenti l’evoluzione essenziale della Salute. Evocare è una startup innovativa fondata sull’esperienza di un gruppo dinamico di persone. Il nostro team è unico: combina la competenza tecnologica e manageriale con la sensibilità e la conoscenza in campo sanitario.",
 
     author: "",
     street_address: "Via Corso Magenta, 56",

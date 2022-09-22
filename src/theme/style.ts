@@ -24,7 +24,7 @@ export const style = {
         ,
         logo: {
             display: 'flex',
-            height: '45vmin',
+            height: '20vmin'
         },
         logoContainer: {
             display: {
@@ -39,7 +39,7 @@ export const style = {
             display: 'flex',
             letterSpacing: '.3rem',
             textDecoration: 'none',
-            fontSize: '2.5vmin'
+            fontSize: '2vmin'
         },
         title: {
             mr: 2,
@@ -47,7 +47,18 @@ export const style = {
             fontWeight: 700,
             letterSpacing: '.3rem',
             textDecoration: 'none',
-            fontSize: '10vmin',
+            fontSize: '9vmin',
+        }
+    },
+    common: {
+        borderBottom: `solid 10px`,
+        margin: {
+            ml: 5,
+            mr: 5,
+            mb: 5,
+        },
+        title: {
+            fontSize: '5vmin',
         }
     },
     card: {
@@ -72,7 +83,7 @@ export const style = {
     },
     header: {
         logo: {
-            height: '15vmin',
+            height: '10vmin',
         },
         reverseColorTitle: {
             backgroundColor: theme.palette.primary.contrastText,
@@ -90,13 +101,13 @@ export const style = {
     },
     navigationBar: {
         button: {
-                mr: 1,
-                ml: 1,
-                width: `${90 / sectionList.length}%`,
-                fontWeight: 600,
-                fontSize: '3vmin',
-                borderColor: theme.palette.primary.contrastText
-            }
+            mr: 1,
+            ml: 1,
+            width: `${90 / sectionList.length}%`,
+            fontWeight: 600,
+            fontSize: '2vmin',
+            borderColor: theme.palette.primary.contrastText
+        }
         ,
         buttonGroup: {
             mt: 5,

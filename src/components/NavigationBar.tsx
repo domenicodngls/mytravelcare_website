@@ -14,9 +14,10 @@ const NavigationBar = () => {
                 <Button
                     key={`${section.title}-button`}
                     variant="contained"
-                    sx={style.navigationBar.button}
+                    color={section.color}
+                    sx={{...style.navigationBar.button}}
                     onClick={() => {
-                        scroller.scrollTo(section.title, {
+                        scroller.scrollTo(section.id, {
                             smooth: true,
                             delay: 100,
                         })
