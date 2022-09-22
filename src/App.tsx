@@ -7,24 +7,26 @@ import NavigationBar from "./components/NavigationBar";
 import SectionList from "./components/SectionList";
 import ScrollToTop from "./components/ScrollToTop";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Footer from "./components/Footer";
 
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-            <div
-                className="App"
-                style={{backgroundColor: "#EEEEEE"}}>
-                <Header></Header>
-                <Body></Body>
-                <NavigationBar></NavigationBar>
-                <SectionList></SectionList>
-                <ScrollToTop >
-                    <Fab size="small" aria-label="scroll back to top">
-                        <KeyboardArrowUpIcon />
-                    </Fab>
-                </ScrollToTop>
-            </div>
-        </ThemeProvider>
+            <ThemeProvider theme={theme}>
+                <div
+                    className="App"
+                    style={{backgroundColor: "#EEEEEE"}}>
+                    <Header></Header>
+                    <Body></Body>
+                    <NavigationBar></NavigationBar>
+                    <SectionList></SectionList>
+                    <ScrollToTop>
+                        <Fab size="small" aria-label="scroll back to top">
+                            <KeyboardArrowUpIcon/>
+                        </Fab>
+                    </ScrollToTop>
+                    <Footer></Footer>
+                </div>
+            </ThemeProvider>
     );
 }
 
