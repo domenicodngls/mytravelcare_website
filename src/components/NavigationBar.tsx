@@ -4,8 +4,11 @@ import {Button, ButtonGroup} from "@mui/material";
 import {style} from "../theme/style";
 import {scroller} from "../common/scroller";
 
-const NavigationBar = () => {
+interface NavigationProps {
+    offset: number;
+}
 
+const NavigationBar = (props: NavigationProps) => {
 
     return (
         <ButtonGroup
@@ -20,6 +23,7 @@ const NavigationBar = () => {
                         scroller.scrollTo(section.id, {
                             smooth: true,
                             delay: 100,
+                            offset: props.offset
                         })
                     }}>
                     {section.title}

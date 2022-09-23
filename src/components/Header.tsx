@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <>
             <Element name={"back-to-top"}/>
-            <AppBar position="sticky">
+            <AppBar position="sticky" id={'header'}>
                 <Container maxWidth={false}>
                     <Toolbar disableGutters>
                         <img src={logo}
