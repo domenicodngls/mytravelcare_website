@@ -54,9 +54,7 @@ export const style = {
         backgroundColor: "#EEEEEE",
         borderBottom: `solid 10px`,
         margin: {
-            ml: 5,
-            mr: 5,
-            mb: 5,
+            m: 5
         },
         title: {
             fontSize: '5vmin',
@@ -111,8 +109,8 @@ export const style = {
         }
         ,
         buttonGroup: {
-            mt: 5,
-            mb: 5,
+            mt: 2,
+            mb: 2,
             height: 'fit-content',
             width: '100%',
             justifyContent: 'center'

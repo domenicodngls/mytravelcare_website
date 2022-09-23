@@ -1,13 +1,16 @@
 export type SectionType = {
     id: string
     title:string
-    images:ImageType[]
+    details:DetailType[]
     description:string
     detail:string
     color:"primary" | "secondary"
 }
 
-export type ImageType ={
+export type DetailType ={
     label:string,
     imgPath: string
+    title:string
+    shortDescription:string
+    description:string
 }

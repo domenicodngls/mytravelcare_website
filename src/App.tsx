@@ -6,13 +6,10 @@ import Body from './components/Body';
 import NavigationBar from "./components/NavigationBar";
 import ScrollToTop from "./components/ScrollToTop";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Footer from "./components/Footer";
-import Functionality from "./components/section/Functionality";
-import Digitalization from "./components/section/Digitalization";
-import AboutUs from "./components/section/AboutUs";
-import Contact from "./components/section/Contact";
 import {style} from "./theme/style";
 import AppBar from "@mui/material/AppBar";
+import {sectionList} from "./content/section";
+import Section from "./components/section/Section";
 
 function App() {
 
@@ -27,7 +24,7 @@ function App() {
         function calculateOffset() {
             const header = document.getElementById('header');
             const navigationBar = document.getElementById('navigationBar');
-            setOffset(header && navigationBar ? (header.offsetHeight + navigationBar.offsetHeight) * (-2) : 0)
+            setOffset(header && navigationBar ? (header.offsetHeight + navigationBar.offsetHeight) * (-1.7) : 0)
             setTop(header ? header.offsetHeight : 0)
             console.log(top);
         }
@@ -47,7 +44,8 @@ function App() {
                 style={{backgroundColor: style.common.backgroundColor}}>
                 {header}
                 <Body></Body>
-                <AppBar id="navigationBar" position={"sticky"} sx={{top: top, backgroundColor:style.common.backgroundColor, boxShadow:"none"}}>
+                <AppBar id="navigationBar" position={"sticky"}
+                        sx={{top: top, backgroundColor: style.common.backgroundColor, boxShadow: "none"}}>
                     {navigationBar}
                 </AppBar>
                 <ScrollToTop>
@@ -55,11 +53,12 @@ function App() {
                         <KeyboardArrowUpIcon/>
                     </Fab>
                 </ScrollToTop>
-                <Functionality></Functionality>
-                <Digitalization></Digitalization>
-                <AboutUs></AboutUs>
-                <Contact></Contact>
-                <Footer></Footer>
+                {sectionList.map((section, index) => (
+                    <Section
+                        data={section}
+                        invert={index % 2 === 0}
+                    />
+                ))}
             </div>
         </ThemeProvider>
     );
