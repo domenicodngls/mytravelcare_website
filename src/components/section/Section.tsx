@@ -55,6 +55,7 @@ const Section = (props: SectionProps) => {
                                 activeStep={activeStep}
                                 index={index}
                                 invert={invert}
+                                key={detail.title}
                             />))
                         }
                     </AutoPlaySwipeableViews>
@@ -101,7 +102,7 @@ const Section = (props: SectionProps) => {
             {data.images && (
                 <Grid2 container spacing={2}>
                     {data.images.map(image => (
-                        <Grid2 xs={6} sx={{textAlign: 'center'}}>
+                        <Grid2 xs={6} sx={{textAlign: 'center'}} key={image.path}>
                             <Link href={image.ref}>
                                 <img src={image.path}
                                      style={{

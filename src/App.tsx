@@ -51,6 +51,7 @@ function App() {
                     <Section
                         data={section}
                         invert={index % 2 === 0}
+                        key={section.id}
                     />
                 ))}
                 <ScrollToTop>

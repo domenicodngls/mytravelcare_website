@@ -26,7 +26,7 @@ export const sectionList: SectionType[] = [
             {
                 label: "farmacia.jpeg4",
                 imgPath: report,
-                title: "Lorem Ipsum",
+                title: "Lorem Ipsum 2",
                 shortDescription: "Lorem Ipsum",
                 description: "Integer velit nisl, vulputate sit amet dolor non, maximus porta elit. Vestibulum convallis justo nec tempor blandit. " +
                     "In scelerisque eu orci eu placerat. Cras posuere laoreet vehicula. Sed condimentum sem felis, non venenatis turpis ullamcorper id. " +
@@ -38,7 +38,7 @@ export const sectionList: SectionType[] = [
             {
                 label: "farmacia.jpeg2",
                 imgPath: report,
-                title: "Lorem Ipsum",
+                title: "Lorem Ipsum 3",
                 shortDescription: "Lorem Ipsum",
                 description: "Sed sed ultricies leo. Fusce gravida accumsan varius. Proin sollicitudin odio condimentum, efficitur leo et, gravida sem. " +
                     "Maecenas sodales neque eget faucibus viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. " +
@@ -51,7 +51,7 @@ export const sectionList: SectionType[] = [
             {
                 label: "farmacia.jpeg3",
                 imgPath: report,
-                title: "Lorem Ipsum",
+                title: "Lorem Ipsum 4",
                 shortDescription: "Lorem Ipsum",
                 description: "Quisque tempus tellus vel mi pretium congue vel non odio. Morbi in quam id tortor rhoncus feugiat. " +
                     "Phasellus vehicula lectus ac ex sollicitudin tincidunt. Curabitur blandit ligula fringilla ante tincidunt, sit amet blandit nisi auctor. " +
