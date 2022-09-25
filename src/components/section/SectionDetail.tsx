@@ -56,6 +56,9 @@ const SectionDetail = (props: SectionDetailProps) => {
                 <Grid2
                     key={data.title}
                     xs={6}
+                    sx={{
+                        minWidth: '65vmin'
+                    }}
                 >
                     <Card sx={{
                         bgcolor: style.common.backgroundColor,

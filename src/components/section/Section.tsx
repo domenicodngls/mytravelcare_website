@@ -106,7 +106,8 @@ const Section = (props: SectionProps) => {
                                 <img src={image.path}
                                      style={{
                                          margin: '0 auto',
-                                         maxHeight: '65px'
+                                         maxHeight: '35vmin',
+                                         maxWidth: '35vmin'
                                      }}/>
                             </Link>
                         </Grid2>
