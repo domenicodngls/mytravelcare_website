@@ -22,6 +22,7 @@ const Section = (props: SectionProps) => {
     const {data, invert} = props
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = data && data.details ? data.details.length : 0;
+    const component = data.component ? React.createElement(data.component, {}) : undefined;
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -37,8 +38,6 @@ const Section = (props: SectionProps) => {
         <Box
             sx={{
                 ...style.common.margin,
-                height: '65vmin',
-                mb: 10,
             }}>
             {data.details && (data.details.length > 1 ?
                 (<>
@@ -47,7 +46,7 @@ const Section = (props: SectionProps) => {
                         index={activeStep}
                         onChangeIndex={handleStepChange}
                         enableMouseEvents
-                        interval={100000}
+                        interval={1000000000}
                         style={{backgroundColor: style.common.backgroundColor}}
                     >
                         {data.details.map((detail, index) => (
@@ -114,6 +113,7 @@ const Section = (props: SectionProps) => {
                     ))}
                 </Grid2>
             )}
+            {component}
         </Box>
     </>)
 }

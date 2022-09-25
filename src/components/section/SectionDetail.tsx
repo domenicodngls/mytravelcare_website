@@ -9,6 +9,7 @@ import CardActions from '@mui/material/CardActions'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandMore from "../ExpandMore";
 import {style} from "../../theme/style";
+import Grid2 from "@mui/material/Unstable_Grid2";
 
 interface SectionDetailProps {
     data: DetailType,
@@ -27,31 +28,39 @@ const SectionDetail = (props: SectionDetailProps) => {
 
     return (
         <>
-            <Box key={data.label}
-                 sx={{
-                     display: 'flex',
-                     flexDirection: (invert ? 'row' : 'row-reverse'),
-                     bgcolor: style.common.backgroundColor,
-                 }}>
+            <Grid2 container key={data.label}
+                   sx={{
+                       display: 'flex',
+                       flexDirection: (invert ? 'row' : 'row-reverse'),
+                       justifyContent: 'space-around',
+                       bgcolor: style.common.backgroundColor,
+                   }}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                    <Box
-                        component="img"
-                        sx={{
-                            width: '65vmin',
-                            height: '65vmin',
-                            bgcolor: style.common.backgroundColor
-                        }}
-                        src={data.imgPath}
-                        alt={data.label}
-                    />
+                    <Grid2 xs={4}
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        overflow: 'hidden',
+                        maxHeight: '40vmin'
+                    }}>
+                        <img
+                            style={{
+                                maxWidth: '65vmin',
+                                maxHeight: '65vmin',
+                            }}
+                            src={data.imgPath}
+                        />
+                    </Grid2>
                 ) : null}
-                <Box
+                <Grid2
                     key={data.title}
+                    xs={6}
                 >
                     <Card sx={{
                         bgcolor: style.common.backgroundColor,
                         boxShadow: "none",
-                        width: '79vmin'
+                        width: '60vmin'
                     }}>
                         <CardHeader
                             title={data.title}
@@ -65,7 +74,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                             <Typography
                                 variant="body2"
                                 align="right"
-                                sx={{flex:"auto"}}
+                                sx={{flex: "auto"}}
                             >MOSTRA ALTRO</Typography>
                             <ExpandMore
                                 expand={expanded}
@@ -83,8 +92,8 @@ const SectionDetail = (props: SectionDetailProps) => {
                             </CardContent>
                         </Collapse>
                     </Card>
-                </Box>
-            </Box>
+                </Grid2>
+            </Grid2>
         </>
     )
 }

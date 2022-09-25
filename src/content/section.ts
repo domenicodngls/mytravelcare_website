@@ -1,7 +1,8 @@
 import {SectionType} from "../common/customType";
-import logoRegioneLombardia from "../icons/logoRegioneLombardia.svg";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
+import report from "../images/report.jpeg";
+import Contact from "../components/section/Contact";
 
 export const sectionList: SectionType[] = [
     {
@@ -11,7 +12,7 @@ export const sectionList: SectionType[] = [
         details: [
             {
             label: "farmacia.jpeg",
-            imgPath: "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+            imgPath: report,
             title: "Lorem Ipsum",
             shortDescription: "Lorem Ipsum",
             description: "\n" +
@@ -24,7 +25,7 @@ export const sectionList: SectionType[] = [
         },
             {
                 label: "farmacia.jpeg4",
-                imgPath: "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+                imgPath: report,
                 title: "Lorem Ipsum",
                 shortDescription: "Lorem Ipsum",
                 description: "Integer velit nisl, vulputate sit amet dolor non, maximus porta elit. Vestibulum convallis justo nec tempor blandit. " +
@@ -36,7 +37,7 @@ export const sectionList: SectionType[] = [
             },
             {
                 label: "farmacia.jpeg2",
-                imgPath: "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+                imgPath: report,
                 title: "Lorem Ipsum",
                 shortDescription: "Lorem Ipsum",
                 description: "Sed sed ultricies leo. Fusce gravida accumsan varius. Proin sollicitudin odio condimentum, efficitur leo et, gravida sem. " +
@@ -49,8 +50,8 @@ export const sectionList: SectionType[] = [
             },
             {
                 label: "farmacia.jpeg3",
-                imgPath: "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
-                title: "Lorem Ipsum3",
+                imgPath: report,
+                title: "Lorem Ipsum",
                 shortDescription: "Lorem Ipsum",
                 description: "Quisque tempus tellus vel mi pretium congue vel non odio. Morbi in quam id tortor rhoncus feugiat. " +
                     "Phasellus vehicula lectus ac ex sollicitudin tincidunt. Curabitur blandit ligula fringilla ante tincidunt, sit amet blandit nisi auctor. " +
@@ -67,7 +68,7 @@ export const sectionList: SectionType[] = [
         details: [
             {
                 label: "profilo.jpeg",
-                imgPath: "profilo.jpeg",
+                imgPath: report,
                 title: "L'Applicativo",
                 shortDescription: "XXXXXX",
                 description:
@@ -94,5 +95,11 @@ export const sectionList: SectionType[] = [
             {path: regioneLombardia, ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"}, {path:logoFerb, ref: "https://www.ferbonlus.com/"}
         ],
         color: "secondary"
+    },
+    {
+        id: "contact",
+        title: "Contatti",
+        color: "secondary",
+        component: Contact
     }
 ]

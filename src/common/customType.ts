@@ -5,6 +5,8 @@ export type SectionType = {
     description?:string
     color:"primary" | "secondary"
     images?: ImageRefType[]
+    component?: () => JSX.Element
+
 }
 
 export type DetailType ={
