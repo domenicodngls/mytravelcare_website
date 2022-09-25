@@ -10,6 +10,7 @@ import {style} from "./theme/style";
 import AppBar from "@mui/material/AppBar";
 import {sectionList} from "./content/section";
 import Section from "./components/section/Section";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -26,7 +27,6 @@ function App() {
             const navigationBar = document.getElementById('navigationBar');
             setOffset(header && navigationBar ? (header.offsetHeight + navigationBar.offsetHeight) * (-1.7) : 0)
             setTop(header ? header.offsetHeight : 0)
-            console.log(top);
         }
 
         function handleResize() {
@@ -48,17 +48,18 @@ function App() {
                         sx={{top: top, backgroundColor: style.common.backgroundColor, boxShadow: "none"}}>
                     {navigationBar}
                 </AppBar>
-                <ScrollToTop>
-                    <Fab size="small" aria-label="scroll back to top">
-                        <KeyboardArrowUpIcon/>
-                    </Fab>
-                </ScrollToTop>
                 {sectionList.map((section, index) => (
                     <Section
                         data={section}
                         invert={index % 2 === 0}
                     />
                 ))}
+                <Contact></Contact>
+                <ScrollToTop>
+                    <Fab size="small" aria-label="scroll back to top">
+                        <KeyboardArrowUpIcon/>
+                    </Fab>
+                </ScrollToTop>
             </div>
         </ThemeProvider>
     );

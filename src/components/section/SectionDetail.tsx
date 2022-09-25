@@ -1,14 +1,11 @@
 import React from 'react'
 import {DetailType} from "../../common/customType";
 import {Box, Collapse, Grid, IconButton} from "@mui/material";
-import SwipeableViews from 'react-swipeable-views';
-import {autoPlay} from 'react-swipeable-views-utils';
 import Typography from "@mui/material/Typography";
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions'
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandMore from "../ExpandMore";
 import {style} from "../../theme/style";
@@ -35,7 +32,6 @@ const SectionDetail = (props: SectionDetailProps) => {
                      display: 'flex',
                      flexDirection: (invert ? 'row' : 'row-reverse'),
                      bgcolor: style.common.backgroundColor,
-                     flexWrap: "wrap"
                  }}>
                 {Math.abs(activeStep - index) <= 2 ? (
                     <Box
@@ -51,18 +47,17 @@ const SectionDetail = (props: SectionDetailProps) => {
                 ) : null}
                 <Box
                     key={data.title}
-                    sx={{flexGrow: 1}}
                 >
                     <Card sx={{
                         bgcolor: style.common.backgroundColor,
-                        boxShadow: "none"
+                        boxShadow: "none",
+                        width: '79vmin'
                     }}>
                         <CardHeader
                             title={data.title}
-                            subheader={data.label}
                         />
                         <CardContent>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2">
                                 {data.shortDescription}
                             </Typography>
                         </CardContent>
@@ -82,7 +77,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                             </ExpandMore>
                         </CardActions>
                         <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent sx={{overflowY: 'auto', height: '20vmin'}}>
+                            <CardContent sx={{overflowY: 'auto', height: '20vmin', width: '100%'}}>
                                 <Typography paragraph>{data.description}
                                 </Typography>
                             </CardContent>

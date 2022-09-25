@@ -1,10 +1,10 @@
 export type SectionType = {
     id: string
     title:string
-    details:DetailType[]
-    description:string
-    detail:string
+    details?:DetailType[]
+    description?:string
     color:"primary" | "secondary"
+    images?: ImageRefType[]
 }
 
 export type DetailType ={
@@ -13,4 +13,9 @@ export type DetailType ={
     title:string
     shortDescription:string
     description:string
+}
+
+export type ImageRefType={
+    path: string
+    ref: string
 }

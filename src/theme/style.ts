@@ -60,26 +60,6 @@ export const style = {
             fontSize: '5vmin',
         }
     },
-    card: {
-        card: {
-            ml: 5,
-            mr: 5,
-            mb: 5,
-            mt: 5
-        },
-        content: {
-            fontSize: '4vmin',
-            color: theme.palette.text.secondary
-        },
-        detail: {
-            fontSize: '4vmin',
-            color: theme.palette.text.secondary
-        },
-        header: {
-            backgroundColor: theme.palette.secondary.main,
-            color: theme.palette.secondary.contrastText
-        }
-    },
     header: {
         logo: {
             height: '10vmin',
@@ -95,7 +75,6 @@ export const style = {
             letterSpacing: '.3rem',
             textDecoration: 'none',
             fontSize: '3.2vmin'
-
         }
     },
     navigationBar: {
