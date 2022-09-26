@@ -27,7 +27,7 @@ const SectionDetail = (props: SectionDetailProps) => {
     };
 
     return (
-        <>
+
             <Grid2 container key={data.label}
                    sx={{
                        display: 'flex',
@@ -36,7 +36,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                        bgcolor: style.common.backgroundColor,
                    }}>
                 {Math.abs(activeStep - index) <= 2 ? (
-                    <Grid2 xs={4}
+                    <Grid2 sm={4} xs={12}
                     sx={{
                         display: 'flex',
                         alignItems: 'center',
@@ -55,7 +55,8 @@ const SectionDetail = (props: SectionDetailProps) => {
                 ) : null}
                 <Grid2
                     key={data.title}
-                    xs={6}
+                    sm={6}
+                    xs={12}
                     sx={{
                         minWidth: '65vmin'
                     }}
@@ -63,10 +64,11 @@ const SectionDetail = (props: SectionDetailProps) => {
                     <Card sx={{
                         bgcolor: style.common.backgroundColor,
                         boxShadow: "none",
-                        width: '60vmin'
+                        width: '100%',
                     }}>
                         <CardHeader
                             title={data.title}
+                            titleTypographyProps={{fontSize: '4vmin', fontWeight: '700'}}
                         />
                         <CardContent>
                             <Typography variant="body2">
@@ -89,7 +91,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                             </ExpandMore>
                         </CardActions>
                         <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent sx={{overflowY: 'auto', height: '20vmin', width: '100%'}}>
+                            <CardContent sx={{overflowY: 'auto', height: '20vmin'}}>
                                 <Typography paragraph>{data.description}
                                 </Typography>
                             </CardContent>
@@ -97,7 +99,6 @@ const SectionDetail = (props: SectionDetailProps) => {
                     </Card>
                 </Grid2>
             </Grid2>
-        </>
     )
 }
 

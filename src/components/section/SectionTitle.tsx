@@ -24,7 +24,7 @@ const SectionTitle = (props: SectionTitleProps) => {
                     borderBottom: style.common.borderBottom,
                     ...style.common.margin,
                     ...style.common.title,
-                    borderBottomColor: data && theme.palette[data.color].main
+                    borderBottomColor: data && theme.palette[data.color].main,
                 }}
             >{data?.title}</Typography>
             <Element name={data?.id}></Element>

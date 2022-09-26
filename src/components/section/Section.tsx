@@ -33,7 +33,8 @@ const Section = (props: SectionProps) => {
     const handleStepChange = (step: number) => {
         setActiveStep(step);
     };
-    return (<>
+    return (
+        <Box sx={{m:'10px'}}>
         <SectionTitle data={data}/>
         <Box
             sx={{
@@ -117,7 +118,7 @@ const Section = (props: SectionProps) => {
             )}
             {component}
         </Box>
-    </>)
+    </Box>)
 }
 
 export default Section;
