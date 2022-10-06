@@ -14,12 +14,11 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 interface SectionProps {
     data: SectionType,
-    invert: boolean
 }
 
 const Section = (props: SectionProps) => {
 
-    const {data, invert} = props
+    const {data} = props
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = data && data.details ? data.details.length : 0;
     const component = data.component ? React.createElement(data.component, {}) : undefined;
@@ -34,91 +33,40 @@ const Section = (props: SectionProps) => {
         setActiveStep(step);
     };
     return (
-        <Box sx={{m:'10px'}}>
-        <SectionTitle data={data}/>
-        <Box
-            sx={{
-                ...style.common.margin,
-            }}>
-            {data.details && (data.details.length > 1 ?
-                (<>
-                    <AutoPlaySwipeableViews
-                        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                        index={activeStep}
-                        onChangeIndex={handleStepChange}
-                        enableMouseEvents
-                        interval={1000000000}
-                        style={{backgroundColor: style.common.backgroundColor}}
-                    >
-                        {data.details.map((detail, index) => (
-                            <SectionDetail
-                                data={detail}
-                                activeStep={activeStep}
-                                index={index}
-                                invert={invert}
-                                key={detail.title}
-                            />))
-                        }
-                    </AutoPlaySwipeableViews>
-                    <MobileStepper
-                        steps={maxSteps}
-                        sx={{
-                            bgcolor: style.common.backgroundColor,
-                        }}
-                        position="static"
-                        activeStep={activeStep}
-                        nextButton={
-                            <Button
-                                size="small"
-                                onClick={handleNext}
-                                disabled={activeStep === maxSteps - 1}
-                            >
-                                {theme.direction === 'rtl' ? (
-                                    <KeyboardArrowLeft/>
-                                ) : (
-                                    <KeyboardArrowRight/>
-                                )}
-                            </Button>
-                        }
-                        backButton={
-                            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                                {theme.direction === 'rtl' ? (
-                                    <KeyboardArrowRight/>
-                                ) : (
-                                    <KeyboardArrowLeft/>
-                                )}
-                            </Button>
-                        }
-                    />
-                </>) :
-                (<>
+        <Box sx={{m: '10px'}}>
+            <SectionTitle data={data}/>
+            <Box
+                sx={{
+                    ...style.common.margin,
+                }}>
+                {data.details && data.details.map((detail, index) => (
                     <SectionDetail
-                        data={data.details[0]}
-                        activeStep={0}
-                        index={0}
-                        invert={invert}
-                    />
-                </>))
-            }
-            {data.images && (
-                <Grid2 container spacing={2}>
-                    {data.images.map(image => (
-                        <Grid2 xs={6} sx={{textAlign: 'center'}} key={image.path}>
-                            <Link href={image.ref}>
-                                <img src={image.path}
-                                     style={{
-                                         margin: '0 auto',
-                                         maxHeight: '35vmin',
-                                         maxWidth: '35vmin'
-                                     }}/>
-                            </Link>
-                        </Grid2>
-                    ))}
-                </Grid2>
-            )}
-            {component}
-        </Box>
-    </Box>)
+                        data={detail}
+                        activeStep={activeStep}
+                        index={index}
+                        invert={index % 2 === 0}
+                        key={detail.title}
+                    />))
+                }
+                {data.images && (
+                    <Grid2 container spacing={2}>
+                        {data.images.map(image => (
+                            <Grid2 xs={6} sx={{textAlign: 'center'}} key={image.path}>
+                                <Link href={image.ref}>
+                                    <img src={image.path}
+                                         style={{
+                                             margin: '0 auto',
+                                             maxHeight: '35vmin',
+                                             maxWidth: '35vmin'
+                                         }}/>
+                                </Link>
+                            </Grid2>
+                        ))}
+                    </Grid2>
+                )}
+                {component}
+            </Box>
+        </Box>)
 }
 
 export default Section;

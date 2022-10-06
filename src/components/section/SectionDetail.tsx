@@ -1,6 +1,17 @@
 import React from 'react'
 import {DetailType} from "../../common/customType";
-import {Box, Collapse, Grid, IconButton} from "@mui/material";
+import {
+    Box,
+    Button,
+    Collapse,
+    Dialog, DialogActions,
+    DialogContent,
+    DialogContentText,
+    DialogTitle,
+    Grid,
+    IconButton,
+    Modal
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -22,12 +33,17 @@ const SectionDetail = (props: SectionDetailProps) => {
 
     const {data, activeStep, index, invert} = props;
     const [expanded, setExpanded] = React.useState(false);
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
 
     return (
-
+        <>
             <Grid2 container key={data.label}
                    sx={{
                        display: 'flex',
@@ -35,24 +51,22 @@ const SectionDetail = (props: SectionDetailProps) => {
                        justifyContent: 'space-around',
                        bgcolor: style.common.backgroundColor,
                    }}>
-                {Math.abs(activeStep - index) <= 2 ? (
-                    <Grid2 sm={4} xs={12}
-                    sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        overflow: 'hidden',
-                        maxHeight: '40vmin'
-                    }}>
-                        <img
-                            style={{
-                                maxWidth: '65vmin',
-                                maxHeight: '65vmin',
-                            }}
-                            src={data.imgPath}
-                        />
-                    </Grid2>
-                ) : null}
+                <Grid2 sm={4} xs={12}
+                       sx={{
+                           display: 'flex',
+                           alignItems: 'center',
+                           justifyContent: 'center',
+                           overflow: 'hidden',
+                           maxHeight: '40vmin'
+                       }}>
+                    <img
+                        style={{
+                            maxWidth: '65vmin',
+                            maxHeight: '65vmin',
+                        }}
+                        src={data.imgPath}
+                    />
+                </Grid2>
                 <Grid2
                     key={data.title}
                     sm={6}
@@ -76,19 +90,9 @@ const SectionDetail = (props: SectionDetailProps) => {
                             </Typography>
                         </CardContent>
                         <CardActions disableSpacing>
-                            <Typography
-                                variant="body2"
-                                align="right"
-                                sx={{flex: "auto"}}
-                            >MOSTRA ALTRO</Typography>
-                            <ExpandMore
-                                expand={expanded}
-                                onClick={handleExpandClick}
-                                aria-expanded={expanded}
-                                aria-label="show more"
-                            >
-                                <ExpandMoreIcon/>
-                            </ExpandMore>
+                            <Button onClick={handleOpen}>
+                                Approfondisci
+                            </Button>
                         </CardActions>
                         <Collapse in={expanded} timeout="auto" unmountOnExit>
                             <CardContent sx={{overflowY: 'auto', height: '20vmin'}}>
@@ -98,7 +102,25 @@ const SectionDetail = (props: SectionDetailProps) => {
                         </Collapse>
                     </Card>
                 </Grid2>
+
             </Grid2>
+            <Dialog
+                fullWidth
+                maxWidth={'md'}
+                open={open}
+                onClose={handleClose}
+            >
+                <DialogTitle>Optional sizes</DialogTitle>
+                <DialogContent>
+                    <DialogContentText>
+                        You can set my maximum width and whether to adapt or not.
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose}>Close</Button>
+                </DialogActions>
+            </Dialog>
+        </>
     )
 }
 

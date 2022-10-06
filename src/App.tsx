@@ -50,7 +50,6 @@ function App() {
                 {sectionList.map((section, index) => (
                     <Section
                         data={section}
-                        invert={index % 2 === 0}
                         key={section.id}
                     />
                 ))}
