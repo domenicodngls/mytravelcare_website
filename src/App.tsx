@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import Header from "./components/Header";
 import {Fab, ThemeProvider} from "@mui/material";
 import {theme} from "./theme/themeProvider";
@@ -25,7 +25,7 @@ function App() {
             const header = document.getElementById('header');
             const navigationBar = document.getElementById('navigationBar');
             setOffset(header && navigationBar ? (header.offsetHeight + navigationBar.offsetHeight) * (-1.7) : 0)
-            setTop(header ? header.offsetHeight : 0)
+            setTop(header ? header.offsetHeight - 1 : 0)
         }
 
         function handleResize() {

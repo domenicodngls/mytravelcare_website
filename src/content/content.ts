@@ -2,10 +2,12 @@
 
 export const site = {
     title: "MyTravelCare",
-    subtitle: "by Evocare Srl",
+    subtitle: "FERB - Evocare",
     email: "evocare.mytravelcare@gmail.com",
     description: "Al sicuro con la tua salute anche quando non sei a casa",
-    long_description: "MyTravelCare aiuta i pazienti a superare le barriere della Salute. Crediamo che migliorare la qualità, l’accessibilità e l’efficacia del sistema rappresenti l’evoluzione essenziale della Salute. Evocare è una startup innovativa fondata sull’esperienza di un gruppo dinamico di persone. Il nostro team è unico: combina la competenza tecnologica e manageriale con la sensibilità e la conoscenza in campo sanitario.",
+    long_description: "L’applicativo multilingua MyTravelCare è una soluzione tecnologia di digitalizzazione della presa in carico del paziente in accesso al pronto soccorso.\n" +
+        "L’applicativo, progettato e sviluppato dalla Fondazione Europea di Ricerca Biomedica (FERB) con il supporto e la collaborazione dell’Università degli studi di Bergamo ha l’obiettivo di facilitare l’interazione dei pazienti (stranieri ma non solo) con il personale sanitario, offrendo una traduzione simultanea in 8 lingue (italiano, inglese, francese, spagnolo, tedesco, cinese, russo e arabo) di tutte le informazioni di triage fornite.\n" +
+        "MyTravelCare rappresenta una innovazione nell’ambito dei processi di digitalizzazione dei percorsi di accoglienza dei pazienti volto a sviluppare un nuovo modello di sanità integrato.",
 
     author: "",
     street_address: "Via Corso Magenta, 56",

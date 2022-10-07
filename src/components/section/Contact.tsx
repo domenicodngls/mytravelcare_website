@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Box, Button, FormControl, FormGroup, Input, InputLabel, TextField} from "@mui/material";
 import {style} from "../../theme/style";
 import Grid2 from "@mui/material/Unstable_Grid2";
+import {theme} from "../../theme/themeProvider";
 
 const Contact = () => {
     const initialValues = {
@@ -28,20 +29,26 @@ const Contact = () => {
     return (
         <>
             <form onSubmit={(e) => handleSubmit(e)}>
-                <Grid2 container spacing={2} columnSpacing={2}>
-                    <Grid2 xs={6}>
+                <Grid2 container spacing={2} columnSpacing={2}  sx={{
+                    bgcolor: theme.palette.primary.contrastText,
+                    ...style.common.margin
+                }}>
+                    <Grid2 xs={6} >
                         <TextField
+                            focused
                             id="name"
                             name="name"
                             label="Nome"
                             type="text"
                             value={formValues.name}
                             onChange={(e) => handleInputChange(e)}
-                           style={{width: '100%'}}
+                            style={{width: '100%'}}
+                            color={"primary"}
                         />
                     </Grid2>
                     <Grid2 xs={6}>
                         <TextField
+                            focused
                             id="email"
                             name="email"
                             label="Email"
@@ -49,10 +56,12 @@ const Contact = () => {
                             value={formValues.email}
                             onChange={(e) => handleInputChange(e)}
                             style={{width: '100%'}}
+                            color={"primary"}
                         />
                     </Grid2>
                     <Grid2 xs={10}>
                         <TextField
+                            focused
                             id="message"
                             name="message"
                             label="Messaggio"
@@ -62,10 +71,11 @@ const Contact = () => {
                             multiline
                             minRows={6}
                             style={{width: '100%'}}
+                            color={"primary"}
                         />
                     </Grid2>
                     <Grid2>
-                        <Button variant="contained" color="secondary" type="submit" >
+                        <Button variant="contained" color="secondary" type="submit">
                             Invia
                         </Button>
                     </Grid2>

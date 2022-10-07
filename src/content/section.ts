@@ -1,76 +1,61 @@
 import {SectionType} from "../common/customType";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
-import report from "../images/report.jpeg";
+import report from "../images/report.png";
+import home from "../images/homePage.svg";
+import symptoms from "../images/symptoms.jpg";
 import Contact from "../components/section/Contact";
 
 export const sectionList: SectionType[] = [
     {
         id: "functionality",
-        title: "Funzionalità",
+        title: "Funzionalità Applicativo",
         description: "Carica foto e profilo dei tuoi farmaci per comunicare più facilmente.",
         details: [
             {
-            label: "farmacia.jpeg",
-            imgPath: report,
-            title: "Lorem Ipsum",
-            shortDescription: "Lorem Ipsum",
-            description: "\n" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet sollicitudin dolor. " +
-                "Maecenas turpis dolor, porta sit amet odio id, fermentum vestibulum neque. Nam nec ante at arcu dictum blandit." +
-                " Donec efficitur viverra pretium. Curabitur lobortis fringilla massa, sed accumsan tellus lacinia ut. " +
-                "Donec venenatis nec dui bibendum feugiat. Suspendisse id vulputate tortor. Sed ac consequat erat. " +
-                "Mauris maximus ac lacus ac fringilla. Aenean lorem enim, posuere ac aliquet a, gravida a libero. " +
-                "Cras nibh ipsum, dictum ac gravida ut, venenatis sed magna."
+            label: "homePage",
+            imgPath: home,
+            title: "Home Page MTC",
+            description: "Il paziente ha la possibilità di selezionare la propria lingua. Il paziente, tramite la sezione profilo, ha modo di compilare la propria intera storia clinica direttamente durante la procedura di triage così come di indicare con precisione i propri sintomi nella sezione apposita. E il medico la avrà a disposizione prima della visita. \n" +
+                "Al termine della compilazione verrà generato un report, un documento di sintesi di quanto comunicato dal paziente, disponibile nella lingua selezionata dal paziente e in italiano a vantaggio del medico che lo processerà. Questo report verrà inviato direttamente al sistema informatico dell’ospedale.\n",
         },
             {
-                label: "farmacia.jpeg4",
+                label: "report",
                 imgPath: report,
-                title: "Lorem Ipsum 2",
-                shortDescription: "Lorem Ipsum",
-                description: "Integer velit nisl, vulputate sit amet dolor non, maximus porta elit. Vestibulum convallis justo nec tempor blandit. " +
-                    "In scelerisque eu orci eu placerat. Cras posuere laoreet vehicula. Sed condimentum sem felis, non venenatis turpis ullamcorper id. " +
-                    "Donec hendrerit libero arcu, non molestie massa eleifend ut. Aliquam viverra elit arcu, ut congue tortor facilisis at. " +
-                    "Aenean eget ipsum a tellus viverra sagittis sit amet ac libero. Nulla ut eleifend tortor. " +
-                    "Etiam eget ante quis elit bibendum porta vel sed lorem. Quisque facilisis metus ut lectus porta pretium. " +
-                    "Donec maximus mattis libero lacinia interdum. Nulla at egestas tellus, ac egestas sem."
+                title: "Dati Sanitari",
+                description: 'La compilazione della sezione profilo permette al paziente di inserire: '+
+                   ' -	i propri dati personali (nome, peso, data di nascita, stato di gravidanza, fumatore), gli ultimi viaggi effettuati (destinazione e date);'+
+'-	le proprie allergie (con possibilità di selezionare per esempio allergie a animali, cibi, piante, polvere, farmaci, materiali);'+
+'-	le patologie da cui è affetto (identificabili per nome, così come per parte del corpo, apparato o organo interessati);'+
+'-	interventi a cui è stato sottoposto (anch’essi identificabili per nome, così come per parte del corpo, apparato o organo interessati);'+
+'-	i farmaci in uso (identificabili tramite nome o principio attivo, per cui è possibile specificare anche dosaggio, frequenza e modalità di assunzione).'
+
             },
             {
-                label: "farmacia.jpeg2",
-                imgPath: report,
-                title: "Lorem Ipsum 3",
-                shortDescription: "Lorem Ipsum",
-                description: "Sed sed ultricies leo. Fusce gravida accumsan varius. Proin sollicitudin odio condimentum, efficitur leo et, gravida sem. " +
-                    "Maecenas sodales neque eget faucibus viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. " +
-                    "Etiam imperdiet, eros vitae consequat vestibulum, justo arcu sodales lectus, non pretium lectus lorem a velit. " +
-                    "Nunc lacinia auctor facilisis. Aliquam placerat blandit velit, ac mattis dui mollis quis. " +
-                    "Vivamus ullamcorper vitae odio accumsan placerat. Aliquam quis tempor massa. Praesent quis ex viverra, pharetra quam nec, mollis enim. " +
-                    "Proin vel leo eu quam tristique porttitor in vel erat. " +
-                    "Duis ultrices, massa at tristique hendrerit, nulla lacus ultricies dolor, non vulputate eros turpis sed ante."
+                label: "symptoms",
+                imgPath: symptoms,
+                title: "Sintomi",
+                description: "Il paziente può indicare i propri sintomi e la loro intensità interagendo direttamente con l’avatar. Cliccando su una specifica parte del corpo, anteriore o posteriore, il paziente potrà selezionare sia sintomi molto comuni come prurito, gonfiore, dolore, febbre che sintomi più specifici. \n" +
+                    "La sezione patologie e interventi presenta un’interfaccia molto simile. Rispettivamente le patologie di cui si soffre e gli interventi a cui si è stati sottoposti possono essere selezionati tramite avatar, da una lista completa di voci oppure da una lista che comprende patologie e interventi più comuni. \n"
             },
             {
-                label: "farmacia.jpeg3",
+                label: "report",
                 imgPath: report,
-                title: "Lorem Ipsum 4",
-                shortDescription: "Lorem Ipsum",
-                description: "Quisque tempus tellus vel mi pretium congue vel non odio. Morbi in quam id tortor rhoncus feugiat. " +
-                    "Phasellus vehicula lectus ac ex sollicitudin tincidunt. Curabitur blandit ligula fringilla ante tincidunt, sit amet blandit nisi auctor. " +
-                    "Donec condimentum pulvinar posuere. Integer et consequat nibh, nec fringilla ipsum. " +
-                    "Mauris luctus vehicula lorem. Morbi iaculis orci at lectus tristique, a laoreet mauris sollicitudin. " +
-                    "In elementum in lorem ut ullamcorper. Duis ultricies ligula egestas turpis ullamcorper auctor."
+                title: "Report",
+                description: 'Il report presenta una sintesi delle informazioni fornite dal paziente. Nel caso in cui il paziente non abbia compilato alcune voci quali allergie, patologie e interventi, l’app verifica che la mancanza di dati sia intenzionale tramite l’opzione “Non sono stati inseriti allergie/patologie/interventi”.'+
+                'Si genera dunque in automatico un file che il paziente deve validare e che solo allora verrà trasferito al medico. Tale documento si presenta divido in due colonne con la lingua selezionata dal paziente e la traduzione in italiano.'
             }],
-        color: "primary"
+        color: "secondary"
     },
     {
         id: "digitalization",
-        title: "Digitalizazione",
+        title: "Sperimentazione Regionale",
         description: "Memorizza i tuoi dati personali, le tue patologie, gli interventi eseguiti, le vaccinazioni e i farmaci in uso.",
         details: [
             {
                 label: "profilo.jpeg",
                 imgPath: report,
                 title: "L'Applicativo",
-                shortDescription: "XXXXXX",
                 description:
                     "MyTravelCare è un progetto sperimentale per digitalizzare i percorsi di accesso al pronto soccorso.\n" +
                     "Attraverso il totem, che parla 8 lingue, si raccolgono informazioni sui sintomi, sui farmaci in\n" +
@@ -86,7 +71,7 @@ export const sectionList: SectionType[] = [
                     "di otto ASST Lombarde e gli utenti ne faranno uso con il supporto di una figura specializzata e\n" +
                     "formata, presente in alcune ore della giornata.\n\n"
             }],
-        color: "primary"
+        color: "secondary"
     },
     {
         id: "about",
@@ -103,3 +88,6 @@ export const sectionList: SectionType[] = [
         component: Contact
     }
 ]
+
+
+//ferb, unibg, regione,   Aria spa

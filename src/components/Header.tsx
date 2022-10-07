@@ -24,13 +24,6 @@ const Header = () => {
                         <Typography
                             variant="h6"
                             noWrap
-                            sx={{...style.header.reverseColorTitle, ...style.header.title}}
-                        >
-                            {site.title}
-                        </Typography>
-                        <Typography
-                            variant="h6"
-                            noWrap
                             sx={style.header.title}
                         >
                             {site.subtitle}

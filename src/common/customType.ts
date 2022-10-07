@@ -13,7 +13,6 @@ export type DetailType ={
     label:string,
     imgPath: string
     title:string
-    shortDescription:string
     description:string
 }
 
