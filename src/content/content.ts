@@ -16,11 +16,11 @@ export const site = {
     phone: "(+39) 035 3068111",
 
     social: {
-        facebook_url: "",
+        facebook_url: "https://www.facebook.com/",
         github_url: "",
         gitlab_url: "",
         googleplus_url: "",
-        instagram_url: "",
+        instagram_url: "https://www.instagram.com/mytravelcareapp/?igshid=YmMyMTA2M2Y%3D",
         linkedin_url: "",
         pinterest_url: "",
         slack_url: "",
