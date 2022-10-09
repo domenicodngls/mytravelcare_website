@@ -19,7 +19,7 @@ export const style = {
             display: 'flex',
             letterSpacing: '.1rem',
             textDecoration: 'none',
-            fontSize: '2.5vmin'
+            fontSize: '2.5vmin',
         }
         ,
         logo: {
@@ -94,16 +94,23 @@ export const style = {
             ml: 1,
             width: `${90 / sectionList.length}%`,
             fontWeight: 600,
-            fontSize: '2vmin',
+            fontSize: '2.5vmin',
             borderColor: theme.palette.primary.contrastText
-        }
-        ,
+        },
         buttonGroup: {
             mt: 2,
             mb: 2,
-            height: 'fit-content',
+            height: '10vmin',
             width: '100%',
             justifyContent: 'center'
+        }
+    },
+    sectionDetail: {
+        description: {
+            display: 'flex',
+            letterSpacing: '.1rem',
+            textDecoration: 'none',
+            fontSize: '2.5vmin',
         }
     }
 }

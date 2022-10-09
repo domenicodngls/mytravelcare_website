@@ -1,20 +1,12 @@
 import React from 'react'
 import {DetailType} from "../../common/customType";
-import {
-    Button,
-    Collapse,
-    Dialog, DialogActions,
-    DialogContent,
-    DialogContentText,
-    DialogTitle,
-} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions'
 import {style} from "../../theme/style";
 import Grid2 from "@mui/material/Unstable_Grid2";
+import {Link} from "@mui/material";
 
 interface SectionDetailProps {
     data: DetailType,
@@ -70,35 +62,44 @@ const SectionDetail = (props: SectionDetailProps) => {
                             titleTypographyProps={{fontSize: '4vmin', fontWeight: '700'}}
                         />
                         <CardContent>
-                            <Typography sx={style.body.description}>
-                                {data.description}
-                            </Typography>
+                            {data.description && (
+                                <Typography sx={style.sectionDetail.description} align={"justify"}>
+                                    {data.description}
+                                </Typography>)}
+                            {data.descriptions && data.descriptions.map((desc) => (
+                                <Typography sx={style.sectionDetail.description} align={"justify"}>
+                                    {desc}
+                                </Typography>))}
+                            {data.customDescriptions && data.customDescriptions.map((desc) => (
+                                <Card sx={{
+                                    bgcolor: style.common.backgroundColor,
+                                    boxShadow: "none",
+                                    width: '100%',
+                                }}>
+                                    <CardHeader
+                                        title={desc.title}
+                                        titleTypographyProps={{fontSize: '4vmin', fontWeight: '700', color: desc.color}}
+                                    />
+                                    <CardContent sx={{m: 0}}>
+                                        {desc.description && (
+                                            <Typography sx={style.sectionDetail.description} align={"justify"}>
+                                                {desc.description}
+                                            </Typography>)}
+                                        {desc.anchor && (
+                                            <Link
+                                                sx={style.sectionDetail.description}
+                                                href={desc.anchor.href}
+                                            >
+                                                {desc.anchor.name}
+                                            </Link>
+                                        )}
+                                    </CardContent>
+                                </Card>
+                            ))}
                         </CardContent>
-                        {/*<CardActions disableSpacing>
-                            <Button onClick={handleOpen}>
-                                Approfondisci
-                            </Button>
-                        </CardActions>*/}
                     </Card>
                 </Grid2>
-
             </Grid2>
-            <Dialog
-                fullWidth
-                maxWidth={'md'}
-                open={open}
-                onClose={handleClose}
-            >
-                <DialogTitle>Optional sizes</DialogTitle>
-                <DialogContent>
-                    <DialogContentText>
-                        You can set my maximum width and whether to adapt or not.
-                    </DialogContentText>
-                </DialogContent>
-                <DialogActions>
-                    <Button onClick={handleClose}>Close</Button>
-                </DialogActions>
-            </Dialog>
         </>
     )
 }

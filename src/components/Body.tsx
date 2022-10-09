@@ -4,6 +4,7 @@ import {site} from "../content/content";
 import logo from "../icons/logo.svg";
 import Container from "@mui/material/Container";
 import {style} from "../theme/style";
+import Grid2 from "@mui/material/Unstable_Grid2";
 
 const Body = () => {
         return (
@@ -26,10 +27,29 @@ const Body = () => {
                         <img src={logo} style={style.body.logo} alt="logo"/>
                     </Container>
                 </Container>
-                <Typography
-                    sx={style.body.description}>
-                    {site.long_description}
-                </Typography>
+                <Grid2
+                    container
+                    sx={{m: 5}}
+                    spacing={0}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                >
+                    <Grid2>
+                        <Typography
+                            sx={style.body.description}
+                            align={"justify"}>
+                            {site.long_description}
+                        </Typography>
+                    </Grid2>
+                    <Grid2>
+                        <Typography
+                            sx={{...style.body.description, mt: 2, mb: 5}}
+                            align={"justify"}>
+                            {site.note_description}
+                        </Typography>
+                    </Grid2>
+                </Grid2>
             </>);
     }
 ;

@@ -34,8 +34,12 @@ const Section = (props: SectionProps) => {
                 {data.images && (
                     <Grid2 container spacing={2} sx={style.common.margin}>
                         {data.images.map(image => (
-                            <Grid2 xs={6} sx={{textAlign: 'center', bgcolor: theme.palette.primary.contrastText}} key={image.path}>
-                                <Link href={image.ref}>
+                            <Grid2 xs={12} md={4} sx={{
+                                textAlign: 'center',
+                                bgcolor: theme.palette.primary.contrastText,
+                                alignSelf: 'center'
+                            }} key={image.path}>
+                                <Link href={image.ref} target="_blank">
                                     <img src={image.path}
                                          style={{
                                              margin: '0 auto',

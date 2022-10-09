@@ -10,6 +10,7 @@ import {style} from "./theme/style";
 import AppBar from "@mui/material/AppBar";
 import {sectionList} from "./content/section";
 import Section from "./components/section/Section";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
                         key={section.id}
                     />
                 ))}
+                <Footer></Footer>
                 <ScrollToTop>
                     <Fab size="small" aria-label="scroll back to top">
                         <KeyboardArrowUpIcon/>
