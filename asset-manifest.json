@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mytravelcare_website/static/css/main.1f3f0606.css",
-    "main.js": "/mytravelcare_website/static/js/main.b013162a.js",
+    "main.js": "/mytravelcare_website/static/js/main.1d39be33.js",
     "static/js/787.ff162402.chunk.js": "/mytravelcare_website/static/js/787.ff162402.chunk.js",
     "static/media/application.png": "/mytravelcare_website/static/media/application.21a47e840e8e88fcf530.png",
     "static/media/profile.jpg": "/mytravelcare_website/static/media/profile.24477778fa83e9671e9b.jpg",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/mytravelcare_website/static/media/logo.186adbe9103eba15c7341043313b53d4.svg",
     "index.html": "/mytravelcare_website/index.html",
     "main.1f3f0606.css.map": "/mytravelcare_website/static/css/main.1f3f0606.css.map",
-    "main.b013162a.js.map": "/mytravelcare_website/static/js/main.b013162a.js.map",
+    "main.1d39be33.js.map": "/mytravelcare_website/static/js/main.1d39be33.js.map",
     "787.ff162402.chunk.js.map": "/mytravelcare_website/static/js/787.ff162402.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f3f0606.css",
-    "static/js/main.b013162a.js"
+    "static/js/main.1d39be33.js"
   ]
 }
