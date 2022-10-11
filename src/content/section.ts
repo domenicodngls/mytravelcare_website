@@ -104,10 +104,6 @@ export const sectionList: SectionType[] = [
             {
                 path: logoAria,
                 ref: "https://www.ariaspa.it/"
-            },
-            {
-                path: logoEasytech,
-                ref: "https://www.webeasytech.com/"
             }
         ],
         color: "secondary"
