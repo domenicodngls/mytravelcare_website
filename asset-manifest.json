@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mytravelcare_website/static/css/main.1f3f0606.css",
-    "main.js": "/mytravelcare_website/static/js/main.1d39be33.js",
+    "main.js": "/mytravelcare_website/static/js/main.8925b07e.js",
     "static/js/787.ff162402.chunk.js": "/mytravelcare_website/static/js/787.ff162402.chunk.js",
     "static/media/application.png": "/mytravelcare_website/static/media/application.21a47e840e8e88fcf530.png",
     "static/media/profile.jpg": "/mytravelcare_website/static/media/profile.24477778fa83e9671e9b.jpg",
@@ -12,15 +12,14 @@
     "static/media/regioneLombardia.png": "/mytravelcare_website/static/media/regioneLombardia.5aaf07ddc45f114c3b3d.png",
     "static/media/symptoms.jpg": "/mytravelcare_website/static/media/symptoms.1a8478a5307ca8085e7a.jpg",
     "static/media/logoAria.png": "/mytravelcare_website/static/media/logoAria.9cb8bab1ca9da3eef7fb.png",
-    "static/media/logoEasytech.svg": "/mytravelcare_website/static/media/logoEasytech.6e23c45263b7ee293c1524782a40aae1.svg",
     "static/media/logo.svg": "/mytravelcare_website/static/media/logo.186adbe9103eba15c7341043313b53d4.svg",
     "index.html": "/mytravelcare_website/index.html",
     "main.1f3f0606.css.map": "/mytravelcare_website/static/css/main.1f3f0606.css.map",
-    "main.1d39be33.js.map": "/mytravelcare_website/static/js/main.1d39be33.js.map",
+    "main.8925b07e.js.map": "/mytravelcare_website/static/js/main.8925b07e.js.map",
     "787.ff162402.chunk.js.map": "/mytravelcare_website/static/js/787.ff162402.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f3f0606.css",
-    "static/js/main.1d39be33.js"
+    "static/js/main.8925b07e.js"
   ]
 }
