@@ -13,8 +13,8 @@
     "static/media/symptoms.jpg": "/mytravelcare_website/static/media/symptoms.1a8478a5307ca8085e7a.jpg",
     "static/media/logo.svg": "/mytravelcare_website/static/media/logo.8f85f5b4f79bbba2cdb063f72468a7f0.svg",
     "index.html": "/mytravelcare_website/index.html",
-    "main.1f3f0606.css.map": "/mytravelcare_website/static/css/main.1f3f0606.css.map",
-    "main.85647cd9.js.map": "/mytravelcare_website/static/js/main.85647cd9.js.map",
+    "main.1f3f0606.css.map": "/static/css/main.1f3f0606.css.map",
+    "main.85647cd9.js.map": "/static/js/main.85647cd9.js.map",
     "787.ff162402.chunk.js.map": "/mytravelcare_website/static/js/787.ff162402.chunk.js.map"
   },
   "entrypoints": [
