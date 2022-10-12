@@ -1,6 +1,6 @@
 export const site = {
     title: "MyTravelCare",
-    subtitle: "FERB - Evocare",
+    subtitle: "MyTravelCare",
     email: "evocare.mytravelcare@gmail.com",
     description: "Al sicuro con la tua salute anche quando non sei a casa",
     long_description: "L’applicativo multilingua MyTravelCare è una soluzione tecnologia di digitalizzazione della presa in carico del paziente in accesso al pronto soccorso.\n" +
