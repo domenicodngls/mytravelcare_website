@@ -1,7 +1,7 @@
 {
   "name": "mytravelcare_webpage",
   "version": "0.1.0",
-  "homepage": "https://domenicodngls.github.io/mytravelcare_website",
+  "homepage": "https://mytravelcare.eu",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
