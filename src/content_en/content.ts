@@ -2,12 +2,14 @@ export const site_en = {
     title: "MyTravelCare",
     subtitle: "MyTravelCare",
     email: "evocare.mytravelcare@gmail.com",
-    description: "Al sicuro con la tua salute anche quando non sei a casa",
-    long_description: "MyTravelCare è il servizio di Regione Lombardia dedicato ai cittadini stranieri che hanno bisogno di " +
-        "accedere alle cure del pronto soccorso e ha l’obiettivo di velocizzare e facilitare la comunicazione con il " +
-        "personale sanitario, acquisendo le informazioni utili per la diagnosi e la definizione della terapia. Il " +
-        "servizio è disponibile in 8 lingue: italiano, inglese, francese, spagnolo, tedesco, cinese, russo e arabo.",
-    note_description: "MyTravelCare è un servizio di Regione Lombardia realizzato in collaborazione con FERB e l’Università degli Studi di Bergamo.",
+    description: "Stay safe with your health even when you are not home",
+    long_description: "MyTravelCare is the new service launched by Regione Lombardia (Lombardy Region) and dedicated to " +
+        "foreign citizens seeking access to cures in Emergency Care Departments. The service is designed with " +
+        "the aim of fastening and facilitating the communication with healthcare personnel, acquiring useful " +
+        "information for both diagnosis and therapy. MyTravelCare is available in 8 languages: Italian, English, " +
+        "French, Spanish, German, Chinese, Russian, and Arabic.",
+    note_description: "MyTravelCare is a regional service developed in collaboration with FERB (Fondazione Europea della " +
+        "Fondazione Biomedica) and the University of Bergamo.",
 
     author: "",
     street_address: "Via Corso Magenta, 56",

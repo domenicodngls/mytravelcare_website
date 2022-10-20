@@ -36,7 +36,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                        }}>
                     {data.imgPath && (<img
                         style={{
-                            height: '80vmin',
+                            width: '50vmin',
                         }}
                         src={data.imgPath}
                     />)}

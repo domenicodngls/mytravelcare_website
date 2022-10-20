@@ -117,7 +117,6 @@ function App() {
                         key={section.id}
                     />
                 ))}
-                <Footer></Footer>
                 <ScrollToTop>
                     <Fab size="small" aria-label="scroll back to top">
                         <KeyboardArrowUpIcon/>

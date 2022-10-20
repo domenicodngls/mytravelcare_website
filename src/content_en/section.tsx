@@ -2,20 +2,20 @@ import {SectionType} from "../common/customType";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
 import logoUnibg from "../icons/logoUnibg.svg";
-import home from "../images/homePage.svg";
-import symptoms from "../images/symptoms.jpg";
-import profile from "../images/profile.jpg";
-import application from "../images/application.png";
+import rollup from "../images/rollup_en.png";
+import home from "../images/home_en.svg";
+import symptoms from "../images/symptoms_en.svg";
+import profile from "../images/profile_en.svg";
 import {Typography} from "@mui/material";
 
 export const sectionListEn: SectionType[] = [
     {
         id: "whereToUse",
-        title: "Dove Posso Utilizzare MyTravelCare?",
+        title: "Where Can I Use MyTravelCare?",
         details: [{
             title: "",
             label: "homePage",
-            imgPath: application,
+            imgPath: rollup,
             descriptionComponent:
                 <>
                     <Typography sx={{
@@ -24,29 +24,28 @@ export const sectionListEn: SectionType[] = [
                         fontSize: '2.5vmin', display: 'contents',
                         justifyContent: 'center'
                     }}>
-                        Puoi accedere al servizio attraverso i</Typography>
+                        The service can be accessed via</Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold',
                         justifyContent: 'center'
-                    }}> Totem
-                        MyTravelCare </Typography>
+                    }}> MyTravelCare Kiosks</Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin', display: 'contents',
                         justifyContent: 'center'
-                    }}>collocati nelle sale di
-                        attesa del Pronto soccorso.</Typography>
+                    }}>, located in waiting rooms of
+                        Emergency Departments.</Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin',
-                        mt:1,
+                        mt: 1,
                         justifyContent: 'center'
                     }}>
-                        Il Servizio è oggi attivo presso:
+                        Service is now active in:
                     </Typography>
                     <ul>
                         <li key={"garda"}>
@@ -56,7 +55,7 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin', fontWeight: 'bold',
                                 justifyContent: 'center'
                             }}>
-                                ASST Garda - Pronto Soccorso di Desenzano del Garda
+                                ASST Garda - Emergency Department of Desenzano del Garda Hospital
                             </Typography>
                         </li>
                         <li key={"bergamoEst"}>
@@ -66,7 +65,7 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin', fontWeight: 'bold',
                                 justifyContent: 'center'
                             }}>
-                                ASST Bergamo Est - Pronto Soccorso di Seriate
+                                ASST Bergamo Est - Emergency Department of Seriate Hospital
                             </Typography>
                         </li>
                     </ul>
@@ -76,8 +75,8 @@ export const sectionListEn: SectionType[] = [
                         fontSize: '2.5vmin',
                         justifyContent: 'center'
                     }}>
-                        MyTravelCare sarà progressivamente diffuso sul territorio regionale ai seguenti
-                        Pronto Soccorso:
+                        MyTravelCare will be soon available in the following regional Emergency
+                        Departments:
                     </Typography>
                     <ul>
                         <li key={"paoloECarlo"}>
@@ -87,7 +86,7 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin',
                                 justifyContent: 'center'
                             }}>
-                                ASST Santi Paolo e Carlo – Pronto Soccorso Ospedale San Paolo
+                                ASST Santi Paolo e Carlo –Emergency Department of San Paolo Hospital
                             </Typography>
                         </li>
                         <li key={"sondalo"}>
@@ -97,7 +96,7 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin',
                                 justifyContent: 'center'
                             }}>
-                                ASST Valtellina e Alto Lario – Pronto Soccorso Ospedale di Sondalo
+                                ASST Valtellina e Alto Lario – Emergency Department of Sondalo Hospital
                             </Typography>
                         </li>
                         <li key={"livigno"}>
@@ -106,7 +105,7 @@ export const sectionListEn: SectionType[] = [
                                 textDecoration: 'none',
                                 fontSize: '2.5vmin'
                             }}>
-                                ASST Valtellina e Alto Lario – Punto di Primo Intervento Livigno
+                                ASST Valtellina e Alto Lario – First Aid Point of Livigno
                             </Typography>
                         </li>
                         <li key={"varese"}>
@@ -115,7 +114,7 @@ export const sectionListEn: SectionType[] = [
                                 textDecoration: 'none',
                                 fontSize: '2.5vmin'
                             }}>
-                                ASST Sette Laghi - Pronto Soccorso di Varese
+                                ASST Sette Laghi – Emergency Department of Varese Hospital
                             </Typography>
                         </li>
                         <li key={"como"}>
@@ -124,7 +123,7 @@ export const sectionListEn: SectionType[] = [
                                 textDecoration: 'none',
                                 fontSize: '2.5vmin'
                             }}>
-                                ASST Lariana - Pronto Soccorso Sant’Anna di Como
+                                ASST Lariana - Emergency Department of Sant’Anna Hospital of Como
                             </Typography>
                         </li>
                         <li key={"vizzolo"}>
@@ -134,7 +133,8 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin',
                                 justifyContent: 'center'
                             }}>
-                                ASST Melegnano Martesana - Pronto Soccorso Vizzolo Predabissi
+                                ASST Melegnano Martesana - Emergency Department of Vizzolo Predabissi
+                                Hospital
                             </Typography>
                         </li>
                         <li key={"lecco"}>
@@ -144,7 +144,7 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin',
                                 justifyContent: 'center'
                             }}>
-                                ASST Lecco - Pronto Soccorso di Lecco
+                                ASST Lecco - Emergency Department of Lecco Hospital
                             </Typography>
                         </li>
                     </ul>
@@ -154,11 +154,12 @@ export const sectionListEn: SectionType[] = [
     },
     {
         id: "functionality",
-        title: "Come funziona MyTravelCare?",
-        description: "Se hai effettuato il triage e hai un codice bianco o verde, puoi recarti al Totem collocato presso la sala di\n" +
-            "attesa del pronto soccorso. Se hai bisogno di aiuto, rivolgiti allo staff dedicato presente in sala.",
+        title: "How Does MyTravelCare Work?",
+        description: "If during the triage you are assigned either a white or a green code, you can access the Kiosk located in " +
+            "the waiting room of the Emergency Department by using your bracelet (or assigned code). If you need " +
+            "any assistance for using the digital device, you can ask to the dedicated personnel.",
         descriptionComponent:
-            <Typography  variant='h3' sx={{
+            <Typography variant='h3' sx={{
                 display: 'flex',
                 letterSpacing: '.1rem',
                 textDecoration: 'none',
@@ -166,7 +167,7 @@ export const sectionListEn: SectionType[] = [
                 justifyContent: 'center'
 
             }}>
-                Utilizzo del Totem MyTravelCare
+                Use of MyTravelCare Kiosk
             </Typography>,
         details: [
             {
@@ -180,28 +181,28 @@ export const sectionListEn: SectionType[] = [
                         fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold',
                         justifyContent: 'center'
                     }}>
-                        Seleziona la tua lingua, scannerizza il braccialetto </Typography>
+                        Select your language and scan the wristband bar code. </Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin', display: 'contents',
                         justifyContent: 'center'
                     }}>
-                        che hai ricevuto dal personale sanitario durante la procedura di triage e
+                        After this,
                     </Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold',
                         justifyContent: 'center'
-                    }}> accedi alla sezione Dati sanitari </Typography>
+                    }}> access the Profile section </Typography>
                     <Typography sx={{
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin', display: 'contents',
                         justifyContent: 'center'
                     }}>
-                        per compilare la tua storia clinica.
+                        to fill in your medical history.
                     </Typography>
                 </>,
             },
@@ -217,41 +218,41 @@ export const sectionListEn: SectionType[] = [
                             fontSize: '2.5vmin', display: 'contents',
                             justifyContent: 'center'
                         }}>
-                            Inserisci con precisione i tuoi
+                            Fill in your
                         </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold',
                             justifyContent: 'center'
-                        }}> dati personali </Typography>
+                        }}> personal data </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents',
                             justifyContent: 'center'
                         }}>
-                            (altezza, peso, data di nascita, stato
-                            di gravidanza, fumatore) e gli
+                            (name, weight, date of birth, pregnancy status, smoker
+                            status) and your most
                         </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold',
                             justifyContent: 'center'
-                        }}> ultimi viaggi effettuati </Typography>
+                        }}> recent travels </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents',
                             justifyContent: 'center'
-                        }}> (destinazione e date).
+                        }}> (destination and date).
                         </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin'
-                        }}> Seleziona quindi eventuali:
+                        }}> Then, if any, select:
                         </Typography>
                         <ul>
                             <li key={"allergie"}>
@@ -259,13 +260,13 @@ export const sectionListEn: SectionType[] = [
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold'
-                                }}>allergie</Typography>
+                                }}>allergies</Typography>
                                 <Typography sx={{
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents'
-                                }}> (con possibilità di selezionare per esempio allergie a animali, cibi,
-                                    piante, polvere, farmaci, materiali);
+                                }}> (you can select allergies to animals, foods, plants and trees, dust,
+                                    medications, chemicals, and materials);
                                 </Typography>
                             </li>
                             <li key={"patologie"}>
@@ -273,13 +274,13 @@ export const sectionListEn: SectionType[] = [
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold'
-                                }}>patologie</Typography>
+                                }}>pathologies</Typography>
                                 <Typography sx={{
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents'
-                                }}> da cui sei affetto (identificabili per nome, così come per parte del
-                                    corpo, apparato o organo interessati);
+                                }}> (pathologies can be identified either by name or by selecting body
+                                    parts, apparatuses or organs involved);
                                 </Typography>
                             </li>
                             <li key={"interventi"}>
@@ -287,13 +288,13 @@ export const sectionListEn: SectionType[] = [
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold'
-                                }}>interventi</Typography>
+                                }}>surgeries</Typography>
                                 <Typography sx={{
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents'
-                                }}> a cui sei stato sottoposto (anch’essi identificabili per nome, così
-                                    come per parte del corpo, apparato o organo interessati);
+                                }}> (surgeries can be identified either by name or by selecting body
+                                    parts, apparatuses or organs involved);
                                 </Typography>
                             </li>
                             <li key={"farmaci in uso"}>
@@ -301,14 +302,14 @@ export const sectionListEn: SectionType[] = [
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold'
-                                }}>farmaci in uso</Typography>
+                                }}>drugs in use</Typography>
                                 <Typography sx={{
                                     letterSpacing: '.1rem',
                                     textDecoration: 'none',
                                     fontSize: '2.5vmin', display: 'contents'
-                                }}> (identificabili tramite nome o principio attivo, per cui è possibile specificare
-                                    anche
-                                    dosaggio, frequenza e modalità di assunzione).
+                                }}> (drugs can be identified either by name or by active ingredient. Dose, frequency,
+                                    and
+                                    route of administration can be specified.).
                                 </Typography>
                             </li>
                         </ul>
@@ -325,22 +326,22 @@ export const sectionListEn: SectionType[] = [
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents'
                         }}>
-                            Inserisci i tuoi
+                            Insert your
                         </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents', fontWeight: 'bold'
-                        }}> sintomi </Typography>
+                        }}> symptoms </Typography>
                         <Typography sx={{
                             letterSpacing: '.1rem',
                             textDecoration: 'none',
                             fontSize: '2.5vmin', display: 'contents'
                         }}>
-                            e la loro intensità interagendo direttamente con l’avatar.
-                            Cliccando su una specifica parte del corpo, anteriore o posteriore, potrai
-                            selezionare sia sintomi molto comuni come prurito, gonfiore, dolore, febbre, sia
-                            sintomi più specifici.
+                            and their intensity directly by interacting with the avatar.
+                            By clicking on a specific body part, either in the front or back, you will be able to
+                            select common symptoms like itching, swelling, pain, and fever or even more
+                            specific symptoms.
                         </Typography>
                     </>
             }],
@@ -348,12 +349,8 @@ export const sectionListEn: SectionType[] = [
     },
     {
         id: "about",
-        title: "Attori Coinvolti",
+        title: "Partners",
         images: [
-            {
-                path: regioneLombardia,
-                ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"
-            },
             {
                 path: logoFerb,
                 ref: "https://www.ferbonlus.com/"
@@ -361,6 +358,10 @@ export const sectionListEn: SectionType[] = [
             {
                 path: logoUnibg,
                 ref: "https://www.unibg.it/"
+            },
+            {
+                path: regioneLombardia,
+                ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"
             }
         ],
         color: "secondary"

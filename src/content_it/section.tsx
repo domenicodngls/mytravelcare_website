@@ -2,20 +2,20 @@ import {SectionType} from "../common/customType";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
 import logoUnibg from "../icons/logoUnibg.svg";
-import home from "../images/homePage.svg";
-import symptoms from "../images/symptoms.jpg";
-import profile from "../images/profile.jpg";
-import application from "../images/application.png";
+import home from "../images/home_en.svg";
+import symptoms from "../images/symptoms_en.svg";
+import profile from "../images/profile_en.svg";
+import rollup from "../images/rollup_en.png";
 import {Typography} from "@mui/material";
 
 export const sectionListIt: SectionType[] = [
     {
         id: "whereToUse",
-        title: "Dove Posso Utilizzare MyTravelCare in Italiano?",
+        title: "Dove Posso Utilizzare MyTravelCare?",
         details: [{
             title: "",
             label: "homePage",
-            imgPath: application,
+            imgPath: rollup,
             descriptionComponent:
                 <>
                     <Typography sx={{

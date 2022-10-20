@@ -94,7 +94,7 @@ export const style = {
             ml: 1,
             width: `${90 / sectionListIt.length}%`,
             fontWeight: 600,
-            fontSize: '2.5vmin',
+            fontSize: '2vmin',
             borderColor: theme.palette.primary.contrastText
         },
         buttonGroup: {
