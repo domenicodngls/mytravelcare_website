@@ -16,10 +16,7 @@ interface SectionDetailProps {
 
 const SectionDetail = (props: SectionDetailProps) => {
 
-    const {data, index, invert} = props;
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const {data} = props;
 
     return (
         <>

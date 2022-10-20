@@ -1,12 +1,20 @@
 import * as React from 'react';
 import Typography from "@mui/material/Typography";
-import {site} from "../content/content";
+import {site_it} from "../content_it/content";
+import {site_en} from "../content_en/content";
 import logo from "../icons/logo.svg";
 import Container from "@mui/material/Container";
 import {style} from "../theme/style";
 import Grid2 from "@mui/material/Unstable_Grid2";
 
-const Body = () => {
+interface BodyProps {
+    language: string;
+}
+
+const Body = (props: BodyProps) => {
+
+        const {language} = props;
+        const site = language === "it" ? site_it : site_en;
         return (
             <>
                 <Container maxWidth="xl" sx={style.body.containerFlex}>

@@ -1,5 +1,4 @@
 import React from 'react'
-import {sectionList} from "../../content/section";
 import Typography from "@mui/material/Typography";
 import {SectionType} from "../../common/customType";
 import {style} from "../../theme/style";

@@ -1,14 +1,19 @@
 import * as React from 'react';
-import {sectionList} from "../content/section";
+import {sectionListIt} from "../content_it/section";
+import {sectionListEn} from "../content_en/section";
 import {Button, ButtonGroup} from "@mui/material";
 import {style} from "../theme/style";
 import {scroller} from "../common/scroller";
 
 interface NavigationProps {
     offset: number;
+    language: string
 }
 
 const NavigationBar = (props: NavigationProps) => {
+
+    const {language, offset} = props;
+    const sectionList = language === "it" ? sectionListIt : sectionListEn;
 
     return (
         <ButtonGroup
@@ -23,7 +28,7 @@ const NavigationBar = (props: NavigationProps) => {
                         scroller.scrollTo(section.id, {
                             smooth: true,
                             delay: 100,
-                            offset: props.offset
+                            offset: offset
                         })
                     }}>
                     {section.title}

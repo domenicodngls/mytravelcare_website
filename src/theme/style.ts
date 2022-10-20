@@ -1,5 +1,5 @@
 import {theme} from "./themeProvider";
-import {sectionList} from "../content/section";
+import {sectionListIt} from "../content_it/section";
 
 export const style = {
     body: {
@@ -92,7 +92,7 @@ export const style = {
         button: {
             mr: 1,
             ml: 1,
-            width: `${90 / sectionList.length}%`,
+            width: `${90 / sectionListIt.length}%`,
             fontWeight: 600,
             fontSize: '2.5vmin',
             borderColor: theme.palette.primary.contrastText

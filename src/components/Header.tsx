@@ -3,14 +3,21 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import {site} from "../content/content";
+import {site_it} from "../content_it/content";
+import {site_en} from "../content_en/content";
 import logo from "../icons/logo.svg";
 import {style} from "../theme/style";
 import {Scroll} from "../common/scroller";
 
-const Header = () => {
+interface HeaderProps {
+    language: string;
+}
 
+const Header = (props: HeaderProps) => {
+    const { language } = props;
     let Element = Scroll.Element;
+
+    const site = language === "it" ? site_it: site_en;
 
     return (
         <>

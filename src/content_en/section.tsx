@@ -6,10 +6,9 @@ import home from "../images/homePage.svg";
 import symptoms from "../images/symptoms.jpg";
 import profile from "../images/profile.jpg";
 import application from "../images/application.png";
-import {Box, Typography} from "@mui/material";
-import {style} from "../theme/style";
+import {Typography} from "@mui/material";
 
-export const sectionList: SectionType[] = [
+export const sectionListEn: SectionType[] = [
     {
         id: "whereToUse",
         title: "Dove Posso Utilizzare MyTravelCare?",

@@ -1,4 +1,4 @@
-export const site = {
+export const site_en = {
     title: "MyTravelCare",
     subtitle: "MyTravelCare",
     email: "evocare.mytravelcare@gmail.com",

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Typography from "@mui/material/Typography";
-import {site} from "../content/content";
+import {site_it} from "../content_it/content";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
@@ -26,7 +26,7 @@ const Footer = () => {
                                     noWrap
                                     sx={{ml: 1}}
                                 >
-                                    {site.email}
+                                    {site_it.email}
                                 </Typography>
                             </Grid2>
                             <Grid2 xs={12} md={4} sx={{alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
@@ -36,7 +36,7 @@ const Footer = () => {
                                     noWrap
                                     sx={{ml: 1}}
                                 >
-                                    {site.city} - {site.street_address}
+                                    {site_it.city} - {site_it.street_address}
                                 </Typography>
                             </Grid2>
                             <Grid2 xs={12} md={4} sx={{alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
@@ -46,11 +46,11 @@ const Footer = () => {
                                     noWrap
                                     sx={{ml: 1}}
                                 >
-                                    {site.phone}
+                                    {site_it.phone}
                                 </Typography>
                             </Grid2>
                             <Grid2 xs={12} md={6} sx={{alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
-                                <Link href={site.social.facebook_url} target="_blank"
+                                <Link href={site_it.social.facebook_url} target="_blank"
                                       sx={{display: 'flex', alignItems: 'center'}}>
                                     <FacebookTwoToneIcon sx={{color: theme.palette.primary.contrastText}}/>
                                     <Typography
@@ -63,7 +63,7 @@ const Footer = () => {
                                 </Link>
                             </Grid2>
                             <Grid2 xs={12} md={6} sx={{alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
-                                <Link href={site.social.instagram_url} target="_blank"
+                                <Link href={site_it.social.instagram_url} target="_blank"
                                       sx={{display: 'flex', alignItems: 'center'}}>
                                     <InstagramIcon sx={{color: theme.palette.primary.contrastText}}/>
                                     <Typography
