@@ -1,19 +1,23 @@
+import {jsx} from "@emotion/react";
+import JSX = jsx.JSX;
+
 export type SectionType = {
     id: string
     title: string
     details?: DetailType[]
     description?: string
+    descriptionComponent? :  JSX.Element
     color: "primary" | "secondary"
     images?: ImageRefType[]
     component?: () => JSX.Element
-
 }
 
 export type DetailType = {
     label: string,
-    imgPath: string
+    imgPath?: string
     title: string
     description?: string
+    descriptionComponent? :  JSX.Element
     descriptions?: string[]
     customDescriptions?: CustomDescription[]
 }

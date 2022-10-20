@@ -37,12 +37,12 @@ const SectionDetail = (props: SectionDetailProps) => {
                            justifyContent: 'center',
                            overflow: 'hidden',
                        }}>
-                    <img
+                    {data.imgPath && (<img
                         style={{
                             height: '80vmin',
                         }}
                         src={data.imgPath}
-                    />
+                    />)}
                 </Grid2>
                 <Grid2
                     key={data.title}
@@ -66,6 +66,7 @@ const SectionDetail = (props: SectionDetailProps) => {
                                 <Typography sx={style.sectionDetail.description} align={"justify"}>
                                     {data.description}
                                 </Typography>)}
+                            {data.descriptionComponent && (data.descriptionComponent)}
                             {data.descriptions && data.descriptions.map((desc) => (
                                 <Typography sx={style.sectionDetail.description} align={"justify"}>
                                     {desc}

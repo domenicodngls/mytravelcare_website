@@ -3,9 +3,11 @@ export const site = {
     subtitle: "MyTravelCare",
     email: "evocare.mytravelcare@gmail.com",
     description: "Al sicuro con la tua salute anche quando non sei a casa",
-    long_description: "L’applicativo multilingua MyTravelCare è una soluzione tecnologia di digitalizzazione della presa in carico del paziente in accesso al pronto soccorso.\n" +
-        "Progettato e sviluppato dalla Fondazione Europea di Ricerca Biomedica (FERB) con il supporto e la collaborazione dell’Università degli studi di Bergamo, l'applicativo ha l’obiettivo di facilitare l’interazione dei pazienti (stranieri ma non solo) con il personale sanitario, offrendo una traduzione simultanea in 8 lingue (italiano, inglese, francese, spagnolo, tedesco, cinese, russo e arabo) di tutte le informazioni di triage fornite.\n",
-    note_description: "MyTravelCare rappresenta un' innovazione nell’ambito dei processi di digitalizzazione dei percorsi di accoglienza del paziente volto a sviluppare un nuovo modello integrato di sanità",
+    long_description: "MyTravelCare è il servizio di Regione Lombardia dedicato ai cittadini stranieri che hanno bisogno di " +
+        "accedere alle cure del pronto soccorso e ha l’obiettivo di velocizzare e facilitare la comunicazione con il " +
+        "personale sanitario, acquisendo le informazioni utili per la diagnosi e la definizione della terapia. Il " +
+        "servizio è disponibile in 8 lingue: italiano, inglese, francese, spagnolo, tedesco, cinese, russo e arabo.",
+    note_description: "MyTravelCare è un servizio di Regione Lombardia realizzato in collaborazione con FERB e l’Università degli Studi di Bergamo.",
 
     author: "",
     street_address: "Via Corso Magenta, 56",

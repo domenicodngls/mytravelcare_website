@@ -6,6 +6,7 @@ import {style} from "../../theme/style";
 import SectionDetail from "./SectionDetail";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import {theme} from "../../theme/themeProvider";
+import Typography from "@mui/material/Typography";
 
 interface SectionProps {
     data: SectionType,
@@ -23,6 +24,12 @@ const Section = (props: SectionProps) => {
                 sx={{
                     ...style.common.margin,
                 }}>
+                {data.description && (
+                    <Typography sx={{...style.sectionDetail.description, marginLeft: 5, justifyContent: 'center'}}>
+                        {data.description}
+                    </Typography>
+                )}
+                {data.descriptionComponent && (data.descriptionComponent)}
                 {data.details && data.details.map((detail, index) => (
                     <SectionDetail
                         data={detail}
