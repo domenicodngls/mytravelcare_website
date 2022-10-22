@@ -349,7 +349,18 @@ export const sectionListEn: SectionType[] = [
     },
     {
         id: "about",
-        title: "Partners",
+        title: "",
+        descriptionComponent:
+            <div style={{marginLeft: 40}}>
+                <Typography sx={{
+                    letterSpacing: '.1rem',
+                    textDecoration: 'none',
+                    fontSize: '2.5vmin',
+                    display: 'contents',
+                }}>
+                    In partnership with
+                </Typography>
+            </div>,
         images: [
             {
                 path: logoFerb,
@@ -360,9 +371,13 @@ export const sectionListEn: SectionType[] = [
                 ref: "https://www.unibg.it/"
             },
             {
+                path: "",
+                ref: ""
+            },
+            {
                 path: regioneLombardia,
                 ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"
-            }
+            },
         ],
         color: "secondary"
     }

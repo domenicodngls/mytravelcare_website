@@ -2,7 +2,7 @@ import {SectionType} from "../common/customType";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
 import logoUnibg from "../icons/logoUnibg.svg";
-import home from "../images/home_en.svg";
+import home from "../images/home_it.svg";
 import symptoms from "../images/symptoms_en.svg";
 import profile from "../images/profile_en.svg";
 import rollup from "../images/rollup_en.png";
@@ -43,7 +43,7 @@ export const sectionListIt: SectionType[] = [
                         letterSpacing: '.1rem',
                         textDecoration: 'none',
                         fontSize: '2.5vmin',
-                        mt:1,
+                        mt: 1,
                         justifyContent: 'center'
                     }}>
                         Il Servizio è oggi attivo presso:
@@ -158,7 +158,7 @@ export const sectionListIt: SectionType[] = [
         description: "Se hai effettuato il triage e hai un codice bianco o verde, puoi recarti al Totem collocato presso la sala di\n" +
             "attesa del pronto soccorso. Se hai bisogno di aiuto, rivolgiti allo staff dedicato presente in sala.",
         descriptionComponent:
-            <Typography  variant='h3' sx={{
+            <Typography variant='h3' sx={{
                 display: 'flex',
                 letterSpacing: '.1rem',
                 textDecoration: 'none',
@@ -348,12 +348,19 @@ export const sectionListIt: SectionType[] = [
     },
     {
         id: "about",
-        title: "Attori Coinvolti",
+        title: "",
+        descriptionComponent:
+        <div style={{marginLeft: 40}}>
+            <Typography sx={{
+                letterSpacing: '.1rem',
+                textDecoration: 'none',
+                fontSize: '2.5vmin',
+                display: 'contents',
+            }}>
+                In partnership con
+            </Typography>
+        </div>,
         images: [
-            {
-                path: regioneLombardia,
-                ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"
-            },
             {
                 path: logoFerb,
                 ref: "https://www.ferbonlus.com/"
@@ -361,7 +368,15 @@ export const sectionListIt: SectionType[] = [
             {
                 path: logoUnibg,
                 ref: "https://www.unibg.it/"
-            }
+            },
+            {
+                path: "",
+                ref: ""
+            },
+            {
+                path: regioneLombardia,
+                ref: "https://www.regione.lombardia.it/wps/portal/istituzionale/"
+            },
         ],
         color: "secondary"
     }

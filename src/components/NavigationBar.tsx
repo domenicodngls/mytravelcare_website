@@ -1,9 +1,8 @@
 import * as React from 'react';
-import {sectionListIt} from "../content_it/section";
-import {sectionListEn} from "../content_en/section";
 import {Button, ButtonGroup} from "@mui/material";
 import {style} from "../theme/style";
 import {scroller} from "../common/scroller";
+import {getSectionByLanguage} from "../common/function";
 
 interface NavigationProps {
     offset: number;
@@ -13,12 +12,12 @@ interface NavigationProps {
 const NavigationBar = (props: NavigationProps) => {
 
     const {language, offset} = props;
-    const sectionList = language === "it" ? sectionListIt : sectionListEn;
+    const sectionList = getSectionByLanguage(language);
 
     return (
         <ButtonGroup
             sx={style.navigationBar.buttonGroup}>
-            {sectionList.map(section => (
+            {sectionList.filter(section => section.title.trim() !== "").map(section => (
                 <Button
                     key={`${section.title}-button`}
                     variant="contained"

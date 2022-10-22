@@ -41,7 +41,7 @@ const Section = (props: SectionProps) => {
                 {data.images && (
                     <Grid2 container spacing={2} sx={style.common.margin}>
                         {data.images.map(image => (
-                            <Grid2 xs={12} md={4} sx={{
+                            <Grid2 xs={12} md={3} sx={{
                                 textAlign: 'center',
                                 bgcolor: theme.palette.primary.contrastText,
                                 alignSelf: 'center'

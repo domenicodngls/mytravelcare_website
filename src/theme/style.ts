@@ -92,7 +92,7 @@ export const style = {
         button: {
             mr: 1,
             ml: 1,
-            width: `${90 / sectionListIt.length}%`,
+            width: `${90 / sectionListIt.filter(section => section.title.trim() !== "").length}%`,
             fontWeight: 600,
             fontSize: '2vmin',
             borderColor: theme.palette.primary.contrastText

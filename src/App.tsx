@@ -8,22 +8,20 @@ import ScrollToTop from "./components/ScrollToTop";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import {style} from "./theme/style";
 import AppBar from "@mui/material/AppBar";
-import {sectionListIt} from "./content_it/section";
-import {sectionListEn} from "./content_en/section";
 import Section from "./components/section/Section";
-import Footer from "./components/Footer";
 import ita from "./images/ita.svg";
 import eng from "./images/eng.svg";
+import {getSectionByLanguage} from "./common/function";
 
 function App() {
     const [offset, setOffset] = useState(0);
     const [top, setTop] = useState(0);
     const [topLanguage, setTopLanguage] = useState('12px');
-    const [language, setLanguage] = useState('it');
+    const [language, setLanguage] = useState('en');
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
 
-    const sectionList = language === "it" ? sectionListIt : sectionListEn;
+    const sectionList = getSectionByLanguage(language);
 
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
@@ -43,7 +41,7 @@ function App() {
             const navigationBar = document.getElementById('navigationBar');
             setOffset(header && navigationBar ? (header.offsetHeight + navigationBar.offsetHeight) * (-1.7) : 0)
             setTop(header ? header.offsetHeight - 1 : 0)
-            setTopLanguage( `${header ? ((header.offsetHeight/2) - 26) : 24}px`)
+            setTopLanguage(`${header ? ((header.offsetHeight / 2) - 26) : 24}px`)
         }
 
         function handleResize() {
