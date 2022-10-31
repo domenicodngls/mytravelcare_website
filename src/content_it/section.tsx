@@ -3,8 +3,8 @@ import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
 import logoUnibg from "../icons/logoUnibg.svg";
 import home from "../images/home_it.svg";
-import symptoms from "../images/symptoms_en.svg";
-import profile from "../images/profile_en.svg";
+import symptoms from "../images/symptoms_it.svg";
+import profile from "../images/profile_it.svg";
 import rollup from "../images/rollup_en.png";
 import {Typography} from "@mui/material";
 
@@ -49,16 +49,6 @@ export const sectionListIt: SectionType[] = [
                         Il Servizio è oggi attivo presso:
                     </Typography>
                     <ul>
-                        <li key={"garda"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin', fontWeight: 'bold',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Garda - Pronto Soccorso di Desenzano del Garda
-                            </Typography>
-                        </li>
                         <li key={"bergamoEst"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
@@ -66,7 +56,7 @@ export const sectionListIt: SectionType[] = [
                                 fontSize: '2.5vmin', fontWeight: 'bold',
                                 justifyContent: 'center'
                             }}>
-                                ASST Bergamo Est - Pronto Soccorso di Seriate
+                                ASST Garda - Pronto Soccorso di Desenzano del Garda
                             </Typography>
                         </li>
                     </ul>
@@ -80,6 +70,16 @@ export const sectionListIt: SectionType[] = [
                         Pronto Soccorso:
                     </Typography>
                     <ul>
+                        <li key={"paoloECarlo"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Bergamo Est - Pronto Soccorso di Seriate
+                            </Typography>
+                        </li>
                         <li key={"paoloECarlo"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
