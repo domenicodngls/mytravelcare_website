@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.1f3f0606.css",
-    "main.js": "/static/js/main.97f3002f.js",
+    "main.js": "/static/js/main.90e080c8.js",
     "static/js/787.ff162402.chunk.js": "/static/js/787.ff162402.chunk.js",
     "static/media/rollup_en.png": "/static/media/rollup_en.d0e7a1c94bca83308c40.png",
     "static/media/symptoms_en.svg": "/static/media/symptoms_en.228f4c66fae57b634ebde1cdc6816251.svg",
+    "static/media/symptoms_it.svg": "/static/media/symptoms_it.3f7f95ffa73a4b30ccb231cbddba9fed.svg",
     "static/media/home_it.svg": "/static/media/home_it.b067a5abc9be0275b764e94ce049fd62.svg",
     "static/media/home_en.svg": "/static/media/home_en.fe128f5080b038162a6b0f271338d78b.svg",
     "static/media/profile_en.svg": "/static/media/profile_en.7d08ea3be014e39c2be6365efcab875d.svg",
+    "static/media/profile_it.svg": "/static/media/profile_it.2aaf1403cc5214ac65fc91ea27a49763.svg",
     "static/media/logoUnibg.svg": "/static/media/logoUnibg.f7dbb9493a82bb42504be624d774d02c.svg",
     "static/media/logoFerb.svg": "/static/media/logoFerb.d5aba2d936271c5cad6cefae8162edef.svg",
     "static/media/regioneLombardia.png": "/static/media/regioneLombardia.5aaf07ddc45f114c3b3d.png",
@@ -16,11 +18,11 @@
     "index.html": "/index.html",
     "static/media/ita.svg": "/static/media/ita.3094e87722c26e87e1ffa034fb4bfa11.svg",
     "main.1f3f0606.css.map": "/static/css/main.1f3f0606.css.map",
-    "main.97f3002f.js.map": "/static/js/main.97f3002f.js.map",
+    "main.90e080c8.js.map": "/static/js/main.90e080c8.js.map",
     "787.ff162402.chunk.js.map": "/static/js/787.ff162402.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f3f0606.css",
-    "static/js/main.97f3002f.js"
+    "static/js/main.90e080c8.js"
   ]
 }
