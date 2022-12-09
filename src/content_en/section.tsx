@@ -58,6 +58,16 @@ export const sectionListEn: SectionType[] = [
                                 ASST Garda - Emergency Department of Desenzano del Garda Hospital
                             </Typography>
                         </li>
+                        <li key={"bergamoEst"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Bergamo Est - Emergency Department of Seriate Hospital
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -69,16 +79,6 @@ export const sectionListEn: SectionType[] = [
                         Departments:
                     </Typography>
                     <ul>
-                        <li key={"bergamoEst"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Bergamo Est - Emergency Department of Seriate Hospital
-                            </Typography>
-                        </li>
                         <li key={"paoloECarlo"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',

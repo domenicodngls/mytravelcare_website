@@ -49,7 +49,7 @@ export const sectionListIt: SectionType[] = [
                         Il Servizio è oggi attivo presso:
                     </Typography>
                     <ul>
-                        <li key={"bergamoEst"}>
+                        <li key={"garda"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
                                 textDecoration: 'none',
@@ -57,6 +57,16 @@ export const sectionListIt: SectionType[] = [
                                 justifyContent: 'center'
                             }}>
                                 ASST Garda - Pronto Soccorso di Desenzano del Garda
+                            </Typography>
+                        </li>
+                        <li key={"bergamoEst"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Bergamo Est - Pronto Soccorso di Seriate
                             </Typography>
                         </li>
                     </ul>
@@ -70,16 +80,6 @@ export const sectionListIt: SectionType[] = [
                         Pronto Soccorso:
                     </Typography>
                     <ul>
-                        <li key={"paoloECarlo"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Bergamo Est - Pronto Soccorso di Seriate
-                            </Typography>
-                        </li>
                         <li key={"paoloECarlo"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
