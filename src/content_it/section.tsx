@@ -7,6 +7,7 @@ import symptoms from "../images/symptoms_it.svg";
 import profile from "../images/profile_it.svg";
 import rollup from "../images/rollup_en.png";
 import {Typography} from "@mui/material";
+import logoEasytech from "../icons/logoEasytech.svg";
 
 export const sectionListIt: SectionType[] = [
     {
@@ -379,6 +380,41 @@ export const sectionListIt: SectionType[] = [
             },
         ],
         color: "secondary"
+    },
+    {
+        id: "techparter",
+        title: "",
+        descriptionComponent:
+            <div style={{marginLeft: 40}}>
+                <Typography sx={{
+                    letterSpacing: '.1rem',
+                    textDecoration: 'none',
+                    fontSize: '2.5vmin',
+                    display: 'contents',
+                }}>
+                    Technology Partner
+                </Typography>
+            </div>,
+        images: [
+            {
+                path: logoEasytech,
+                ref: "https://www.webeasytech.com/"
+            },
+            {
+                path: "",
+                ref: ""
+            },
+            {
+                path: "",
+                ref: ""
+            },
+            {
+                path: "",
+                ref: ""
+            },
+        ],
+        color: "primary",
+        hideTitle: true
     }
 ]
 

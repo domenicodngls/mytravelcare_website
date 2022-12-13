@@ -17,16 +17,20 @@ const SectionTitle = (props: SectionTitleProps) => {
 
     return (
         <>
-            <Typography
-                variant='h3'
-                sx={{
-                    borderBottom: style.common.borderBottom,
-                    ...style.common.margin,
-                    ...style.common.title,
-                    borderBottomColor: data && theme.palette[data.color].main,
-                }}
-            >{data?.title}</Typography>
-            <Element name={data?.id}></Element>
+            {!data?.hideTitle && (
+                <>
+                    <Typography
+                        variant='h3'
+                        sx={{
+                            borderBottom: style.common.borderBottom,
+                            ...style.common.margin,
+                            ...style.common.title,
+                            borderBottomColor: data && theme.palette[data.color].main,
+                        }}
+                    >{data?.title}</Typography>
+                    <Element name={data?.id}></Element>
+                </>
+            )}
         </>)
 }
 

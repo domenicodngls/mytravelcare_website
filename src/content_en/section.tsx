@@ -2,6 +2,7 @@ import {SectionType} from "../common/customType";
 import regioneLombardia from "../icons/regioneLombardia.png";
 import logoFerb from "../icons/logoFerb.svg";
 import logoUnibg from "../icons/logoUnibg.svg";
+import logoEasytech from "../icons/logoEasytech.svg";
 import rollup from "../images/rollup_en.png";
 import home from "../images/home_en.svg";
 import symptoms from "../images/symptoms_en.svg";
@@ -380,8 +381,40 @@ export const sectionListEn: SectionType[] = [
             },
         ],
         color: "secondary"
+    },
+    {
+        id: "techparter",
+        title: "",
+        descriptionComponent:
+            <div style={{marginLeft: 40}}>
+                <Typography sx={{
+                    letterSpacing: '.1rem',
+                    textDecoration: 'none',
+                    fontSize: '2.5vmin',
+                    display: 'contents',
+                }}>
+                    Technology Partner
+                </Typography>
+            </div>,
+        images: [
+            {
+                path: logoEasytech,
+                ref: "https://www.webeasytech.com/"
+            },
+            {
+                path: "",
+                ref: ""
+            },
+            {
+                path: "",
+                ref: ""
+            },
+            {
+                path: "",
+                ref: ""
+            },
+        ],
+        color: "primary",
+        hideTitle: true
     }
 ]
-
-
-//ferb, unibg, regione,   Aria spa

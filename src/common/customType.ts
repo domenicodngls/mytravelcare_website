@@ -10,6 +10,7 @@ export type SectionType = {
     color: "primary" | "secondary"
     images?: ImageRefType[]
     component?: () => JSX.Element
+    hideTitle?: boolean
 }
 
 export type DetailType = {
