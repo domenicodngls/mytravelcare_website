@@ -69,6 +69,16 @@ export const sectionListEn: SectionType[] = [
                                 ASST Bergamo Est - Emergency Department of Seriate Hospital
                             </Typography>
                         </li>
+                        <li key={"como"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Lariana - Emergency Department of Sant’Anna Hospital of Como
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -116,15 +126,6 @@ export const sectionListEn: SectionType[] = [
                                 fontSize: '2.5vmin'
                             }}>
                                 ASST Sette Laghi – Emergency Department of Varese Hospital
-                            </Typography>
-                        </li>
-                        <li key={"como"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin'
-                            }}>
-                                ASST Lariana - Emergency Department of Sant’Anna Hospital of Como
                             </Typography>
                         </li>
                         <li key={"vizzolo"}>

@@ -70,6 +70,16 @@ export const sectionListIt: SectionType[] = [
                                 ASST Bergamo Est - Pronto Soccorso di Seriate
                             </Typography>
                         </li>
+                        <li key={"como"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Lariana - Pronto Soccorso Sant’Anna di Como
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -117,15 +127,6 @@ export const sectionListIt: SectionType[] = [
                                 fontSize: '2.5vmin'
                             }}>
                                 ASST Sette Laghi - Pronto Soccorso di Varese
-                            </Typography>
-                        </li>
-                        <li key={"como"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin'
-                            }}>
-                                ASST Lariana - Pronto Soccorso Sant’Anna di Como
                             </Typography>
                         </li>
                         <li key={"vizzolo"}>
