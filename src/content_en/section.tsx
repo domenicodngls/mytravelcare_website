@@ -79,6 +79,26 @@ export const sectionListEn: SectionType[] = [
                                 ASST Lariana - Emergency Department of Sant’Anna Hospital of Como
                             </Typography>
                         </li>
+                        <li key={"livigno"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Valtellina e Alto Lario – First Aid Point of Livigno
+                            </Typography>
+                        </li>
+                        <li key={"lecco"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin',  fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Lecco - Emergency Department of Lecco Hospital
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -110,15 +130,6 @@ export const sectionListEn: SectionType[] = [
                                 ASST Valtellina e Alto Lario – Emergency Department of Sondalo Hospital
                             </Typography>
                         </li>
-                        <li key={"livigno"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin'
-                            }}>
-                                ASST Valtellina e Alto Lario – First Aid Point of Livigno
-                            </Typography>
-                        </li>
                         <li key={"varese"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
@@ -137,16 +148,6 @@ export const sectionListEn: SectionType[] = [
                             }}>
                                 ASST Melegnano Martesana - Emergency Department of Vizzolo Predabissi
                                 Hospital
-                            </Typography>
-                        </li>
-                        <li key={"lecco"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Lecco - Emergency Department of Lecco Hospital
                             </Typography>
                         </li>
                     </ul>

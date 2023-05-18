@@ -80,6 +80,26 @@ export const sectionListIt: SectionType[] = [
                                 ASST Lariana - Pronto Soccorso Sant’Anna di Como
                             </Typography>
                         </li>
+                        <li key={"livigno"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Valtellina e Alto Lario – Punto di Primo Intervento Livigno
+                            </Typography>
+                        </li>
+                        <li key={"lecco"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Lecco - Pronto Soccorso di Lecco
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -111,15 +131,6 @@ export const sectionListIt: SectionType[] = [
                                 ASST Valtellina e Alto Lario – Pronto Soccorso Ospedale di Sondalo
                             </Typography>
                         </li>
-                        <li key={"livigno"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin'
-                            }}>
-                                ASST Valtellina e Alto Lario – Punto di Primo Intervento Livigno
-                            </Typography>
-                        </li>
                         <li key={"varese"}>
                             <Typography sx={{
                                 letterSpacing: '.1rem',
@@ -137,16 +148,6 @@ export const sectionListIt: SectionType[] = [
                                 justifyContent: 'center'
                             }}>
                                 ASST Melegnano Martesana - Pronto Soccorso Vizzolo Predabissi
-                            </Typography>
-                        </li>
-                        <li key={"lecco"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Lecco - Pronto Soccorso di Lecco
                             </Typography>
                         </li>
                     </ul>
