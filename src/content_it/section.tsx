@@ -100,6 +100,16 @@ export const sectionListIt: SectionType[] = [
                                 ASST Lecco - Pronto Soccorso di Lecco
                             </Typography>
                         </li>
+                        <li key={"vizzolo"}>
+                            <Typography sx={{
+                                letterSpacing: '.1rem',
+                                textDecoration: 'none',
+                                fontSize: '2.5vmin', fontWeight: 'bold',
+                                justifyContent: 'center'
+                            }}>
+                                ASST Melegnano Martesana - Pronto Soccorso Vizzolo Predabissi
+                            </Typography>
+                        </li>
                     </ul>
                     <Typography sx={{
                         letterSpacing: '.1rem',
@@ -138,16 +148,6 @@ export const sectionListIt: SectionType[] = [
                                 fontSize: '2.5vmin'
                             }}>
                                 ASST Sette Laghi - Pronto Soccorso di Varese
-                            </Typography>
-                        </li>
-                        <li key={"vizzolo"}>
-                            <Typography sx={{
-                                letterSpacing: '.1rem',
-                                textDecoration: 'none',
-                                fontSize: '2.5vmin',
-                                justifyContent: 'center'
-                            }}>
-                                ASST Melegnano Martesana - Pronto Soccorso Vizzolo Predabissi
                             </Typography>
                         </li>
                     </ul>
